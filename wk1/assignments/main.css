@@ -1,0 +1,14 @@
+body {
+    background: green;
+}
+
+h1 {
+    padding: 100px;
+    color: white;
+}
+
+p {
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+}
