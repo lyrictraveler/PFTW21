@@ -1,12 +1,16 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(720, 400);
+  background(255); 
+  strokeWeight(3);
 }
 
 function draw() { 
   if (mouseIsPressed) {
-  fill (0);
+  stroke(230);
 } else {
-  fill(255);
+  stroke(215, 53, 103);
 }
-ellipse(mouseX, mouseY,80,80);
+line(mouseX - 66, mouseY, mouseX + 66, mouseY);
+line(mouseX - mouseY - 66, mouseX, mouseY + 66)
 }
+
