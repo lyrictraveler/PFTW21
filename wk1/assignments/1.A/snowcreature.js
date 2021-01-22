@@ -72,10 +72,4 @@ function draw() {
   noFill();
   stroke("blue");
   arc(450, 200, 150, 50, 180, PI, OPEN);
-
-  //
-
-  //flower
-
-  //wallpaper
 }
