@@ -1,52 +1,59 @@
 let grid = undefined;
-//let stroke1 = prompt("enter a basic color name in lowercase", "black");
-//let stroke2 = prompt("enter another basic color in lowercase", "red");
+let stroke1 = prompt("enter a basic color name in lowercase", "purple");
+let stroke2 = prompt("enter another basic color in lowercase", "red");
 
 function setup() {
-    createCanvas(1000, 800);
-    background ("#ccc");
-    //grid = loadImage("/img/100px_grid.png")
+  createCanvas(1000, 800);
+  background("#ccc");
 }
+
 function draw() {
-//mirror
+  //wallpaper
+  stroke(192);
+  fill(157);
+  rect(0, 0, 100, 1000);
+  rect(200, 0, 100, 1000);
+  rect(400, 0, 100, 1000);
+  rect(600, 0, 100, 1000);
+
+  //mirror
   fill("#f1f1f1");
   stroke("#00FFFF");
   strokeWeight(20);
-  ellipse (200, 300, 400, 600);
+  ellipse(200, 300, 400, 600);
 
-//skirt
+  //skirt
   fill("#fff");
-  stroke("#ff0000");
+  stroke(stroke2);
   strokeWeight(10);
-  ellipse (350, 700, 400, 400);
+  ellipse(350, 700, 400, 400);
 
-//torso
+  //torso
   fill("#fff");
-  stroke("#ff0000");
+  stroke(stroke2);
   strokeWeight(10);
-  ellipse (350, 500, 250, 300);
+  ellipse(350, 500, 250, 300);
 
-//head
+  //head
   fill("#fff");
   stroke("#000");
   strokeWeight(5);
-  ellipse (325, 300, 200);
+  ellipse(325, 300, 200);
 
-//hat brim
-  fill("#662D91");
-  stroke("#662D91");
+  //hat brim
+  fill(stroke1);
+  stroke(stroke1);
   strokeWeight(50);
-  ellipse (325, 270, 350, 50);
+  ellipse(325, 270, 350, 50);
 
-//hat crown
-  fill("#662D91");
-  stroke("#662D91");
+  //hat crown
+  fill(stroke1);
+  stroke(stroke1);
   strokeWeight(50);
-  ellipse (325, 200, 200, 50);
+  ellipse(325, 200, 200, 50);
 
-
-//arms
-  stroke("#ff0000");
+  //arms
+  stroke("#000");
   strokeWeight(10);
   strokeCap(ROUND);
   line(100, 325, 270, 450);
@@ -54,7 +61,7 @@ function draw() {
   line(450, 425, 500, 400);
   line(500, 400, 500, 300);
 
-//arcs
+  //arcs
   noFill();
   stroke("green");
   arc(450, 150, 100, 50, 180, PI, OPEN);
@@ -65,17 +72,10 @@ function draw() {
   noFill();
   stroke("blue");
   arc(450, 200, 150, 50, 180, PI, OPEN);
-  
-  // 
 
-//flower
+  //
 
+  //flower
 
-
-
-//wallpaper
-
-
+  //wallpaper
 }
-
-
