@@ -1,13 +1,19 @@
 let grid = undefined;
-let stroke1 = prompt("enter a basic color name in lowercase", "purple");
+let stroke1 = prompt('enter a basic color name in lowercase', 'purple');
 let stroke2 = prompt("enter another basic color in lowercase", "red");
+
+
+
 
 function setup() {
   createCanvas(1000, 800);
   background("#ccc");
+ // grid = loadImage('./img/100px_grid.png');
 }
 
 function draw() {
+  //background(grid);
+
   //wallpaper
   stroke(192);
   fill(157);
