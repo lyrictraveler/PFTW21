@@ -1,12 +1,17 @@
-const title = window.prompt("What is your favorite movie?");
-console.log(title);
-
-const myArr = ['A Fish Called Wanda', 'Dr. Strangelove', 'Shakespeare In Love', 'Pride and Prejudice', 'Dick'];
-
+const myArr = [
+  'A Fish Called Wanda',
+  'Dr. Strangelove',
+  'Shakespeare In Love',
+  'The King of Hearts',
+  'Dick'
+];
 console.log(myArr);
+
+const title = window.prompt('What is your favorite movie?');
+console.log(title);
 
 myArr.push(title);
 
 console.log(myArr.toString());
 
-const movies = window.alert(myArr);
+window.alert(myArr)
