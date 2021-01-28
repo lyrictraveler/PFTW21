@@ -1,38 +1,45 @@
-const myGame1 = {
-  title: 'Scrabble',
-  type: 'board',
-  players: '2 or more',
-  rating: 1,
-  shortDescription: 'a wordy word game for nerds'
-}
+const games = window.prompt(
+  "I have four favorite games in my collection. Pick a number between 1 and 4, and I'll tell you about that game!"
+);
 
-console.log(myGame1.type);
+const myGames = [
+  {
+    game: "Scrabble",
+    type: "board",
+    players: "2 or more",
+    shortDescription: "a wordy word game for nerds.",
+  },
 
-const myGame2 = {
-  title: 'baseball',
-  type: 'ball',
-  players: '9 per team',
-  rating: 3,
-  shortDescription: 'the all-American pastime'
-}
+  {
+    game: "baseball",
+    type: "ball",
+    players: "9 per team",
+    shortDescription: "the all-American pastime.",
+  },
 
-console.log(myGame2.players);
+  {
+    game: "chess",
+    type: "strategy",
+    players: "two",
+    shortDescription: "currently featured in a Netflix mini-series.",
+  },
 
-const myGame3 = {
-  title: 'Cooking Fever',
-  type: 'video',
-  players: 'single player',
-  rating: 2,
-  shortDescription: 'visit many restaurants during a pandemic'
-}
-
-console.log(myGame3.shortDescription);
-
-const myGameArray = 
-[
-  'myGame1',
-  'myGame2',
-  'myGame3'
+  {
+    game: "Cooking Fever",
+    type: "computer",
+    players: "single",
+    shortDescription: "a way to cook at many restaurants during a pandemic.",
+  },
 ];
 
-console.log(myGameArr);
+window.alert(
+  "You selected " +
+    myGames[games - 1].game +
+    ", which is a " +
+    myGames[games - 1].players +
+    " player game" +
+    " and is played using a " +
+    myGames[games - 1].type +
+    ". It is " +
+    myGames[games - 1].shortDescription
+);
