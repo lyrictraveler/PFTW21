@@ -353,3 +353,6 @@ MigrationBackup/
 .ionide/
 
 node_modules
+
+# My own experiments/dumps that I do not want to share
+/Users/Welling/Code/PFTW21/wk2/assignments/test_object/experiment.js
