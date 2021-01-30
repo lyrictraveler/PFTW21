@@ -1,0 +1,20 @@
+body {
+    background: #DFFF00;
+    color: navy;
+    margin: auto;
+  }
+
+h1 {
+  padding: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+p {
+  padding: 100px;
+  padding-bottom: 50px;
+  color: navy;
+  text-align: center;
+}
+
+

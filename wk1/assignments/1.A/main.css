@@ -9,3 +9,8 @@ h1 {
     color: black;
     text-align: center;
 }
+
+display grid {
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+}

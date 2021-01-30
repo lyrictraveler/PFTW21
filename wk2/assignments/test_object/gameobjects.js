@@ -32,14 +32,17 @@ const myGames = [
   },
 ];
 
+console.log(myGames);
+
+
 window.alert(
-  "You selected " +
-    myGames[games - 1].game +
-    ", which is a " +
-    myGames[games - 1].players +
-    " player game" +
-    " and is played using a " +
-    myGames[games - 1].type +
-    ". It is " +
-    myGames[games - 1].shortDescription
+"You selected " +
+      myGames[games - 1].game +
+      ", which is a " +
+      myGames[games - 1].players +
+      " player game" +
+      " and is played using a " +
+      myGames[games - 1].type +
+      ". It is " +
+      myGames[games - 1].shortDescription
 );
