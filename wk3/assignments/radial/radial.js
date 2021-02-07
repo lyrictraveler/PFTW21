@@ -1,19 +1,25 @@
-//I was inspired by this design to try to figure out how it works: https://stuartwainstock.com/p5-js-radial-art-sketch/ 
+//I was inspired by this design to try to figure out how it works: https://stuartwainstock.com/p5-js-radial-art-sketch/
 
 let rotateBy = 10;
 
-let stroke1 = prompt('enter a basic color name in lowercase', 'fuchsia');
-let string = prompt('what is your mood?', 'happy');
-let heft = prompt('enter a number between 1 and 10', 5);
+// Allow user to interact with the program
 
-function setup () {
+let stroke1 = prompt("enter a basic color name in lowercase", "fuchsia");
+let string = prompt("what is your mood?", "happy");
+let heft = prompt("enter a number between 1 and 10", 5);
+
+// Setting the stage
+
+function setup() {
   createCanvas(windowWidth, windowHeight);
-  //background('white'); //I chose to put background in the draw function, otherwise the word becomes illegible as it is overwritten
+  //background('white'); // I chose to put background in the draw function rather than in the setup function. When the background is defined in the setup function the word becomes illegible as it is overwritten.
   angleMode(degrees);
 }
 
+// Creating the radial arm
+
 function makeArm(rotateBy) {
-  let alt = Math.round(rotateBy / 360); //creating a slice of a circle on the canvas
+  let alt = Math.round(rotateBy / 360); // creating a slice of a circle on the canvas
   noFill();
   stroke(stroke1);
   strokeWeight(heft); // my made-up value worked!!!
@@ -21,14 +27,17 @@ function makeArm(rotateBy) {
   text(string, 10, 100 / alt); // word, x-coordinate, y-coordinate; it worked with the prompt!!!
 }
 
- function draw() {
-  background('white');
+// Making the automagic work!
+
+function draw() {
+  background("white");
   translate(200, 200);
   rotate(rotateBy);
   makeArm(rotateBy);
-  rotateBy += 2; // This controls the speed of the rotation
- }   
-   
+  rotateBy += 2; // I *thought* this was controlling the speed of the rotation, but this still confuses me.
+
+// Defining what the mouse does
+
 function mousePressed() {
   noLoop();
 }
