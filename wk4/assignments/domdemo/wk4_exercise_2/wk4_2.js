@@ -10,7 +10,7 @@ let speed;
 // setup here creates the canvas and randomizes the starting position of the rectangle on the y axis and randomizes speed (although I'm not sure what the speed ranges are)
 
 function setup () {
-  createCanvas(1000, 1000);
+  createCanvas(500, 500);
   rectY = random(height - rectHeight);
   speed = random(1 , 3);
 }

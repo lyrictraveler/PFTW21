@@ -7,7 +7,7 @@ let xspeed;
 let yspeed; 
 
 function setup() { 
-  createCanvas(1000, 1000);
+  createCanvas(500, 500);
   x = width/2
   y = height/2
   xspeed = -1; 
