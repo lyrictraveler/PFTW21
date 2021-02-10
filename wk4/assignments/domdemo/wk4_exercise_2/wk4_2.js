@@ -18,11 +18,13 @@ function setup () {
 // in addition to setting background color, we are establishing the location of the rectangle on the X axis as a function of its speed; we are also saying that once the rectangle has passed the bounds of the canvas the loop will stop (game over); a message will appear starting at the 100,300 coordinate that announces click Count
 
 function draw () {
-  background('silver');
+  background('white');
   drawShape();
   rectX += speed;
   if(rectX > width) {
     noLoop();
+    noStroke();
+    fill('navy');
     textSize(28);
     textStyle(BOLDITALIC);
     text('Your score was ' + clickCount + '!', 100, 300);
@@ -32,7 +34,9 @@ function draw () {
 // this is the shape of the target in the game
 
 function drawShape () {
-    fill('green');
+    stroke('violet');
+    strokeWeight(5);
+    fill('aqua');
     rect(rectX, rectY, rectWidth, rectHeight);
   }
 
