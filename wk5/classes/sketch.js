@@ -1,53 +1,47 @@
-let bubble1;
-let bubble2;
+// let bubble1;
+// let bubble2; -- make a bubble array instead of listing each bubble individually
 
+const bubbleArray = []
 
-function setup() {
+function setup () {
   createCanvas(600, 400);
-  bubble1 = new Bubble(200, 200, 40);
-  bubble2 = new Bubble(400, 200, 20);
-
+  // bubble1 = new Bubble(200, 200, 40);
+  // bubble2 = new Bubble(400, 200, 20); -- don't need these since we are creating an array instead and will populate a bubble array with a for loop
+  for (let i = 0; i < 6; i++) {
+    const bubble = new Bubble(400, 200, 20);
+    bubbleArray.push(bubble);
+  }
+// a loop with 6 bubbles in the array has been created
 }
 
-/* function draw() {
-  background(220);
-  bubble1.move();
-  bubble1.show();
-  bubble2.move();
-  bubble2.show();
-} */
+function draw () {
+  background(0);
 
-/* function draw() {
-  background(100);
-  
-  for (let circleX = 75; circleX <= 225; circleX += 75) {
-    circle(circleX, 150, 50);
-  }
-} */
-
-function draw() {
-  background(100);
-  
-  for (let circleX = 75; circleX <= 225; circleX += 75) {
-    circle(circleX, 150, 50);
+  for (let circleX = 0; circleX <= 6; circleX++) {
+    circle(circleX, 75, 50); // trying to follow Happy Coding example
+    bubbleArray[circleX].move(); // getting an error message that this is undefined?
+    bubbleArray[circleX].show();
   }
 }
 
 class Bubble {
-  constructor(x, y) {
-    this.x = 200;
-    this.y = 150;
+  constructor (tempX, tempY, tempR) {
+    this.x = tempX;
+    this.y = tempY;
+    this.r = tempR;
+    this.show();
+    this.move();
   }
-  
-  move() {
+
+  move () {
     this.x = this.x + random(-5, 5);
     this.y = this.y + random(-5, 5)
   }
-  show() {
+
+  show () {
     stroke(255);
     strokeWeight(4);
     noFill();
     ellipse(this.x, this.y, 24, 24);
   }
-
 }
