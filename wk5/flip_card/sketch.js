@@ -151,6 +151,7 @@ function draw () {
     cards[k].show();
   }
   noLoop();
+  gameState.flippedCards.length = 0; // this is a shortcut to emptying out the array
   gameState.waiting = false;
   fill(255);
   textSize(36);
