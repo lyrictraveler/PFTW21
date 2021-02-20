@@ -45,7 +45,7 @@ function setup () {
     for (let cols = 0; cols < 4; cols++) {
       const faceImage = selectedFaces.pop();
       // create new instance of card
-      cards.push(new Card(startingX, startingY, cardfaceArray[0]));
+      cards.push(new Card(startingX, startingY, faceImage));
       startingX += 225;
     }
     startingY += 325; // starting a new row
@@ -71,7 +71,7 @@ function mousePressed () {
   }
   if (gameState.flippedCards.length === 2) {
     gameState.attempts++;
-    if (gameState.flippedCards[0].cardFaceImg === gameState.flippedCards[1].faceImage) {
+    if (gameState.flippedCards[0].cardFaceImg === gameState.flippedCards[1].cardFaceImg) {
       // mark cards as matched so they don't flip back
       gameState.flippedCards[0].isMatch = true;
       gameState.flippedCards[1].isMatch = true;
@@ -84,8 +84,9 @@ function mousePressed () {
       gameState.waiting = true;
       const loopTimeout = window.setTimeout(() => {
         loop();
+        window.clearTimeout(loopTimeout);
       }, 1000)
-      window.clearTimeout(loopTimeout);
+      
 
     }
   }
