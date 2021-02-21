@@ -14,19 +14,22 @@ let cardfaceArray = [];
 let cardBack;
 
 function preload () {
-  cardBack = loadImage('images/cardback.png');
+  cardBack = loadImage('img/cardbackpink.png');
   cardfaceArray = [
-    loadImage('images/impatiens.jpg'),
-    loadImage('images/jonquil.jpg'),
-    loadImage('images/orchid2.jpg'),
-    loadImage('images/orange.jpg'),
-    loadImage('images/peony.jpg'),
-    loadImage('images/peacerose.jpg')
+    loadImage('img/impatiens.jpg'),
+    loadImage('img/jonquil.jpg'),
+    loadImage('img/orchid2.jpg'),
+    loadImage('img/orange.jpg'),
+    loadImage('img/orchid.jpg'),
+    loadImage('img/peacerose_1.jpg'),
+    // tried adding an extra image because game kept being one pair short? 
+    loadImage('img/peony.jpg')
   ];
 }
 
 function setup () {
-  createCanvas(1300, 1500);
+  //createCanvas(900, 1000);
+  createCanvas(800, 1000);
   //background(0);
   let selectedFaces = [];
   for (let z = 0; z < 5; z++) {
@@ -45,18 +48,40 @@ function setup () {
     for (let cols = 0; cols < 4; cols++) {
       const faceImage = selectedFaces.pop();
       // create new instance of card
-      cards.push(new Card(startingX, startingY, cardfaceArray[0]));
-      startingX += 225;
+      cards.push(new Card(startingX, startingY, faceImage));
+      startingX += 150;
     }
-    startingY += 325; // starting a new row
+    startingY += 175; // starting a new row
     startingX = 100; // starting at left hand side
   }
 }
 
-// I think "k" in this next function refers to the "Loop of All Cards", but I'm not sure?
+/* function draw () {
+  background(0);
+  if (gameState.numMatched === gameState.totalPairs) {
+    fill('yellow');
+    textSize(66);
+    text('you win!!!!', 400, 1200);
+    noLoop();
+  }
+  for (let k = 0; k < cards.length; k++) {
+    if(!cards[k].isMatch) {
+      cards[k].face = DOWN;
+    }
+    cards[k].show();
+  }
+  noLoop();
+  gameState.waiting = false;
+  fill(255);
+  textSize(36);
+  text('attempts ' + gameState.attempts, 100, 1100);
+  text('matches ' + gameState.numMatched, 100, 1150);
+} */
 
 function mousePressed () {
+// I think "k" in this next function refers to the "Loop of All Cards", but I'm not sure?
   if (gameState.waiting) {
+    console.log("waiting");
     return;
   }
   for (let k = 0; k < cards.length; k++) {
@@ -71,7 +96,7 @@ function mousePressed () {
   }
   if (gameState.flippedCards.length === 2) {
     gameState.attempts++;
-    if (gameState.flippedCards[0].cardFaceImg === gameState.flippedCards[1].faceImage) {
+    if (gameState.flippedCards[0].cardFaceImg === gameState.flippedCards[1].cardFaceImg) {
       // mark cards as matched so they don't flip back
       gameState.flippedCards[0].isMatch = true;
       gameState.flippedCards[1].isMatch = true;
@@ -84,8 +109,9 @@ function mousePressed () {
       gameState.waiting = true;
       const loopTimeout = window.setTimeout(() => {
         loop();
+        window.clearTimeout(loopTimeout);
       }, 1000)
-      window.clearTimeout(loopTimeout);
+  
 
     }
   }
@@ -96,8 +122,8 @@ class Card {
   constructor (x, y, cardFaceImg) {
     this.x = x;
     this.y = y;
-    this.width = 200;
-    this.height = 300;
+    this.width = 100;
+    this.height = 134;
     this.face = DOWN;
     this.cardFaceImg = cardFaceImg;
     this.isMatch = false;
@@ -108,11 +134,11 @@ class Card {
     if (this.face === UP || this.isMatch) {
       fill('gray');
       rect(this.x, this.y, this.width, this.height, 10);
-      image(this.cardFaceImg, this.x, this.y, 200, 300);
+      image(this.cardFaceImg, this.x, this.y, 100, 134);
     } else {
       fill('aqua');
       rect(this.x, this.y, this.width, this.height, 10);
-      image(cardBack, this.x, this.y, 200, 300);
+      image(cardBack, this.x, this.y, 100, 134);
     }
   }
 
@@ -135,12 +161,12 @@ class Card {
   }
 }
 
-function draw () {
-  background(0);
+function draw () { 
+  background('olivedrab');
   if (gameState.numMatched === gameState.totalPairs) {
     fill('yellow');
     textSize(66);
-    text('you win!!!!', 400, 1200);
+    text('You are sweet!', 200, 800);
     noLoop();
   }
   for (let k = 0; k < cards.length; k++) {
@@ -150,12 +176,13 @@ function draw () {
     cards[k].show();
   }
   noLoop();
+  gameState.flippedCards.length = 0;
   gameState.waiting = false;
   fill(255);
   textSize(36);
-  text('attempts ' + gameState.attempts, 100, 1100);
-  text('matches ' + gameState.numMatched, 100, 1150);
-}
+  text('attempts ' + gameState.attempts, 100, 650);
+  text('matches ' + gameState.numMatched, 100, 700);
+} 
 
 function shuffleArray (array) {
   let counter = array.length;
