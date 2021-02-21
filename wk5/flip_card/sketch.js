@@ -166,7 +166,7 @@ function draw () {
   if (gameState.numMatched === gameState.totalPairs) {
     fill('yellow');
     textSize(66);
-    text('You are sweet!', 200, 800);
+    text('You are so sweet!', 300, 700);
     noLoop();
   }
   for (let k = 0; k < cards.length; k++) {
@@ -179,7 +179,7 @@ function draw () {
   gameState.flippedCards.length = 0;
   gameState.waiting = false;
   fill(255);
-  textSize(36);
+  textSize(24);
   text('attempts ' + gameState.attempts, 100, 650);
   text('matches ' + gameState.numMatched, 100, 700);
 } 
