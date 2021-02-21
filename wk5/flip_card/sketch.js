@@ -1,7 +1,7 @@
 const DOWN = 'down';
 const UP = 'up';
 let startingX = 100;
-let startingY = 100;
+let startingY = 50;
 const cards = []; // create new array "cards"
 const gameState = {
   totalPairs: 6,
@@ -21,8 +21,8 @@ function preload () {
     loadImage('img/orchid2.jpg'),
     loadImage('img/orange.jpg'),
     loadImage('img/orchid.jpg'),
-    loadImage('img/peacerose_1.jpg'),
-    // tried adding an extra image because game kept being one pair short? 
+    //loadImage('img/manyorchids.jpg'),
+    //loadImage('img/peacerose_1.jpg'),
     loadImage('img/peony.jpg')
   ];
 }
@@ -32,7 +32,7 @@ function setup () {
   createCanvas(800, 1000);
   //background(0);
   let selectedFaces = [];
-  for (let z = 0; z < 5; z++) {
+  for (let z = 0; z < 6; z++) {
     const randomIdx = floor(random(cardfaceArray.length));
     const face = cardfaceArray[randomIdx];
     selectedFaces.push(face);
@@ -166,7 +166,7 @@ function draw () {
   if (gameState.numMatched === gameState.totalPairs) {
     fill('yellow');
     textSize(66);
-    text('You are so sweet!', 300, 700);
+    text('Sweet!', 400, 625);
     noLoop();
   }
   for (let k = 0; k < cards.length; k++) {
@@ -180,8 +180,8 @@ function draw () {
   gameState.waiting = false;
   fill(255);
   textSize(24);
-  text('attempts ' + gameState.attempts, 100, 650);
-  text('matches ' + gameState.numMatched, 100, 700);
+  text('attempts ' + gameState.attempts, 100, 600);
+  text('matches ' + gameState.numMatched, 100, 650);
 } 
 
 function shuffleArray (array) {
