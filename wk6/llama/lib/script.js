@@ -60,6 +60,7 @@ new Vue({
   el: "#fact8",
   data: {
     message: "Facts 8 - 10: The Llama, a poem by Ogden Nash",
+    poetryIsAwesome: true,
   },
 });
 
