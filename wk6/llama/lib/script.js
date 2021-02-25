@@ -68,6 +68,7 @@ new Vue({
   el: "#fact9",
   data: {
     message: "The one-l lama / He's a priest.",
+    poetryIsAwesome: true,
   },
 });
 
@@ -75,6 +76,7 @@ new Vue({
   el: "#fact10",
   data: {
     message: "The two-l llama / He's a beast.",
+    poetryIsAwesome: true,
   },
 });
 
@@ -83,5 +85,6 @@ new Vue({
   data: {
     message:
       "And I will bet / A silk pajama / There isn't any / Three-l lllama",
+      poetryIsAwesome: true,
   },
 });
