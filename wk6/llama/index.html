@@ -2,75 +2,48 @@
 
 <html>
   <head>
-    <title>Llamas</title>
+    <title>&#129433; Llamas</title>
     <link rel="stylesheet" href="lib/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="lib/script.js"></script>
   </head>
 
   <body>
 <div class="sidenav">
-  <a href="https://en.wikipedia.org/wiki/Lama">Lamas on  Wikipedia</a>
-  <a href="https://en.wikipedia.org/wiki/Llama">Llamas on Wikipedia</a>
+  <a href="https://en.wikipedia.org/wiki/Llama">Llamas on  Wikipedia</a>
+  <a href="https://en.wikipedia.org/wiki/Lama">Lamas on Wikipedia</a>
   <a href="https://www.vogue.com/article/cozy-up-in-these-21-dreamy-silk-pajamas">Silk Pajamas</a>
-  <a href="https://allpoetry.com/Ogden-Nash">Poetry by Ogden Nash</a>
+  <a href="https://poets.org/poet/ogden-nash">Poetry by Ogden Nash</a>
 </div>
 
-    <div class="content" id="title">
-      <h1>{{message}}</h1>
-    </div>
+<h1 class="content">A Natural History of Llamas</h1>
 
-    <div class="content" id="fact1">
-      <p>{{message}}</p>
-    </div>
+<div class="content" id="facts">
+  <p>{{fact1}}</p>
+  <p>{{fact2}}</p>
+  <p>{{fact3}}</p>
+  <p>{{fact4}}</p>
+  <p>{{fact5}}</p>
+  <p>{{fact6}}</p>
+  <p>{{fact7}}</p>
+</div>
 
-    <div class="content" id="fact2">
-      <p>{{message}}</p>
-    </div>
-
-    <div class="content" id="fact3">
-      <p>{{message}}</p>
-    </div>
-
-    <div class="content" id="fact4">
-      <p>{{message}}</p>
-    </div>
-
-    <div class="content" id="fact5">
-      <p>{{message}}</p>
-    </div>
-
-    <div class="content" id="fact6">
-      <p>{{message}}</p>
-    </div>
-
-    <div class="content" id="fact7">
-      <p>{{message}}</p>
-    </div>
-
-    <div class="content" id="fact8">
-      <p v-if="poetryIsAwesome==true">{{message}}</p>
-      <p v-else>No poetry for you!</p>
-    </div>
-
-    <div class="content" id="fact9">
-      <cite v-if="poetryIsAwesome==true">{{message}}</cite>
-      <p v-else>Humpf!</p>
-    </div>
-
-    <div class="content" id="fact10">
-      <cite v-if="poetryIsAwesome==true">{{message}}</cite>
-      <p v-else>Humpf!</p>
-    </div>
-
-    <div class="content" id="fact11">
-      <cite v-if="poetryIsAwesome==true">{{message}}</cite>
-      <p v-else>Harrumpf!</p>
-    </div>
+<div class="content" id="poetry">
+  <h2 v-if="poetryIsAwesome==true">Facts 8-10: A Poem by Ogden Nash</h2>
+  <h2 v-else>No poetry for you!</h2>
+  <article v-if="poetryIsAwesome==true">
+  <p>{{fact8}}</p>
+  <p>{{fact9}}</p>
+  <p>{{fact10}}</p>
+  </article>
+  <article v-else>
+  <p>Harrumph!</p>
+  </article>
+</div>
 
 
 
-    <!-- When I moved the script src to the head and did not keep a copy here, the page seemed to break? -->
+  <!-- When I moved the script src to the head and did not keep a copy here, the page seemed to break? -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="lib/script.js"></script>
   </body>

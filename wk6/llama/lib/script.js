@@ -1,90 +1,24 @@
 // Add your code here
 
 new Vue({
-  el: "#title",
+  el: '#facts',
   data: {
-    message: "A Natural History of Llamas",
-  },
-});
+    fact1: 'Fact 1: Llama poop does not stink.',
+    fact2: 'Fact 2: The scientific name for llama is llama glama.',
+    fact3: 'Fact 3: Llamas and alpacas are both camelids.',
+    fact4: 'Fact 4: Llamas and alpacas are both mammals.',
+    fact5: 'Fact 5: Llamas and alpacas spit when they are upset.',
+    fact6: 'Fact 6: Llamas and alpacas both live in the Andes.',
+    fact7: 'Fact 7: Llamas and alpacas are not, in fact, the same animal.',
+  }
+})
 
 new Vue({
-  el: "#fact1",
+  el: '#poetry',
   data: {
-    message: "Fact 1: Llama poop does not stink.",
-  },
-});
-
-new Vue({
-  el: "#fact2",
-  data: {
-    message: "Fact 2: The scientific name for llama is llama glama.",
-  },
-});
-
-new Vue({
-  el: "#fact3",
-  data: {
-    message: "Fact 3: Llamas and alpacas are both camelids.",
-  },
-});
-
-new Vue({
-  el: "#fact4",
-  data: {
-    message: "Fact 4: Llamas and alpacas are both mammals.",
-  },
-});
-
-new Vue({
-  el: "#fact5",
-  data: {
-    message: "Fact 5: Llamas and alpacas spit when they are upset.",
-  },
-});
-
-new Vue({
-  el: "#fact6",
-  data: {
-    message: "Fact 6: Llamas and alpacas both live in the Andes.",
-  },
-});
-
-new Vue({
-  el: "#fact7",
-  data: {
-    message: "Fact 7: Llamas and alpacas are not, in fact, the same animal.",
-  },
-});
-
-new Vue({
-  el: "#fact8",
-  data: {
-    message: "Facts 8 - 10: The Llama, a poem by Ogden Nash",
-    poetryIsAwesome: true,
-  },
-});
-
-new Vue({
-  el: "#fact9",
-  data: {
-    message: "The one-l lama / He's a priest.",
-    poetryIsAwesome: true,
-  },
-});
-
-new Vue({
-  el: "#fact10",
-  data: {
-    message: "The two-l llama / He's a beast.",
-    poetryIsAwesome: true,
-  },
-});
-
-new Vue({
-  el: "#fact11",
-  data: {
-    message:
-      "And I will bet / A silk pajama / There isn't any / Three-l lllama",
-      poetryIsAwesome: true,
-  },
-});
+    fact8: "The one-l lama / He's a priest.",
+    fact9: "The two-l llama / He's a beast.",
+    fact10:  "And I will bet / A silk pajama / There isn't any / Three-l lllama",
+    poetryIsAwesome: true, 
+  }
+})
