@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=A, initial-scale=1.0">
+    <title>CSS Styles</title>
+    <link rel="stylesheet" href="css-styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+<h1>Styles</h1>
+<div id="app" v-cloak>
+  <nav>
+ <ul>
+      <li v-bind:class="{active: currentRoute==='home'}"><a href="#">Home</a></li>
+      <li v-bind:class="{active: currentRoute==='products'}"><a href="#">Products</a></li>      
+      <li v-bind:class="{active: currentRoute==='services'}"><a href="#">Services</a></li>      
+      <li v-bind:class="{active: currentRoute==='clients'}"><a href="#">Clients</a></li>      
+      <li v-bind:class="{active: currentRoute==='contact'}"><a href="#">Contact Us</a></li>
+    </ul>
+<!--     //what follows is inline style
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>      
+      <li v-bind:style="[baseStyle, overRideStyle]"><a href="#">Services</a></li>      
+      <li><a href="#">Clients</a></li>      
+      <li><a href="#">Contact Us</a></li>
+    </ul> -->
+  </nav>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="styles-script.js"></script>
+</body>
+</html>
