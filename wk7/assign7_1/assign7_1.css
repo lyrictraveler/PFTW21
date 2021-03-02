@@ -1,0 +1,38 @@
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    body {
+        background: lightblue;
+        color: #555;
+    }
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background: peru;
+      height: 100%;
+      color: white;
+    }
+
+img {
+    padding: 20px;
+}
+
+.nav nav-pills nav-stacked li.active {
+  border-bottom: 1px solid #000;
+  background-color: lightblue;
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background: #555;
+      color: lightblue;
+      padding: 25px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
