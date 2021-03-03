@@ -1,0 +1,16 @@
+table {
+    margin:0;
+    border-bottom: 1px solid #ddd;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.odd {
+    background: #ccc;
+}
+
+.even {
+    background: #eee;
+}

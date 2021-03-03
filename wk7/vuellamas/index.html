@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <title>&#129433; S. American Camelids</title>
+  </head>
+
+  <body>
+    <div id="llama-list">
+      <h1 class="llama-list-title">What to name your next llama</h1>
+      <div id="app" v-cloak></div>
+        <table class="list-container">
+        <thead class="list-head">
+          <th class="rank">Rank</th>
+          <th class="name">Name</th>
+        </thead>
+
+          <tbody>
+              <tr v-for="(critter, index) in llamaArray" 
+              v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !==0}">
+              <tr v-for="(n) in llamaArray" 
+              v-bind:style="{'color': 'white'}">
+              <td>{{critter.rank}}</td>
+              <td>{{critter.name}}</td> 
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="lib/script.js"></script>
+  </body>
+</html>

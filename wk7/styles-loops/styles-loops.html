@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles and Looping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Styles and Looping</h1>
+    <div id="app" v-cloak>
+        <table>
+            <thead>
+                <th>complete</th>
+                <th>task</th>
+            </thead>
+            <tbody>
+<!-- This works through line 22
+                    <tr v-for="task in todos">
+                    <td v-bind:class="{completed: task.completed}">{{task.completed}}</td>
+                    <td v-bind:class="{completed: task.completed}">{{task.title}}</td> -->
+                <tr v-for="(task, index) in todos" 
+                v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !==0}">
+                <td>{{task.completed}}</td>
+                <td>{{task.title}}</td>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="style-loop-script.js"></script>
+</body>
+</html>
