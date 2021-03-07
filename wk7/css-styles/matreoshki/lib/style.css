@@ -1,0 +1,45 @@
+/* Add your styles here */
+/* Add your styles here */
+html {
+  font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
+  background: black;
+}
+
+.matreoshki-title {
+  border-bottom: 2px solid #333;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+}
+
+.list-container {
+  border-bottom: 2px solid purple;
+  padding: 5px;
+  color: white;
+}
+
+.list-head {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.rank, .name {
+  width: 45%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.cell {
+  text-align: center;
+  color: black;
+}
+
+.odd {
+  background:gold;
+}
+
+.even {
+  background: red;
+}

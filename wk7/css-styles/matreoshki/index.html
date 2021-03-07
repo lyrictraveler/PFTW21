@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <title>&#x1FA86; Matreoshki</title>
+  </head>
+
+  <body>
+    <div id="dolls-list" v-cloak>
+      <h1 class="matreoshki-title">Russian Nesting Dolls</h1>
+        <table class="list-container">
+          <thead class="list-head">
+            <th class="name">Name</th>
+            <th class="acquired">Acquired</th>
+            <th class="count">Count</th>
+            <th class="artisan">Artisan</th>
+            <th class="description">Description</th>
+          </thead>
+
+          <tbody>
+            <tr v-for="(doll, index) in dolls" 
+            v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !==0}">
+            <td class="cell">{{doll.name}}</td>
+            <td class="cell">{{doll.acquired}}</td>
+            <td class="cell">{{doll.count}}</td>
+            <td class="cell">{{doll.artisan}}</td>
+            <td class="cell">{{doll.description}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="lib/script.js"></script>
+  </body>
+</html>
