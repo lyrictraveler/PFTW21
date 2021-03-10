@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="stylesheet" href="lib/style.css">
+    <title>8.1 Alpaca Fan Club Registration</title>
+  </head>
+  <body>
+    <h1>If I Gave You Some Yarn Would You Knit Me an Alpaca?</h1>
+    <div id="alpacaForm" v-cloak>
+      <form>
+      <fieldset>
+        <legend>Fan Club Registration</legend>
+        <div>
+          <label for="firstName">
+            First Name
+          </label>
+          <input id="firstName" type="text" v-model="firstName" />
+        </div> 
+        <div class>
+          <label for="lastName">
+            Last Name
+          </label>
+          <input id="lastName" type="text" v-model="lastName" />
+        </div> 
+        <div class>
+          <label for="streetAddress">Street Address</label>
+          <input id="streetAddress" type="text" v-model="streetAddress" />
+        </div> 
+        <div class>
+          <label for="cityAddress">City</label>
+          <input id="cityAddress" type="text" v-model="cityAddress" />
+        </div> 
+        <div>
+          <label>State of</label>
+          <select name="" id=""
+          v-model="stateOf">
+            <option v-for="state in availableStates"
+            v-bind:value="state.value">{{state.name}}</option>
+        </select>
+        </div>
+        <div>
+          <label for="countryName">Country</label>
+          <input id="countryName" v-model="countryName" maxlength="3"/>
+        </div>
+        <div class="alpaca-color">
+          <p>Favorite Alpaca ColorWays</p>
+          <div>
+              <ul>
+                  <li v-for="color in colors">
+                    <label v-bind:for="color.value"> 
+                        <input type="checkbox" name="" 
+                        v-model="selectedColors"
+                        v-bind:id="color.value" v-bind:value="color.value">
+                        {{color.name}}
+                    </label>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <div class="alpaca-status">
+          <label for="alpacaStatus">Alpaca Status</label>
+          <textarea id="alpacaStatus" cols="30" rows="10" v-model="alpacaStatus"> </textarea>
+        </div> 
+        <div class>
+          <p>How would you rate your current Alpaca status?</p>
+          <label>Mild<input type="radio" value="mild" v-model="rateStatus"/></label>
+          <label>Moderate<input type="radio" value="moderate" v-model="rateStatus"/></label>
+          <label>Profound<input type="radio" value="profound" v-model="rateStatus"/></label> 
+          <label>Terminal<input type="radio" value="terminal" v-model="rateStatus"/></label>
+        </div>  
+
+      </fieldset> 
+      <div class="output">
+        <h3>Output</h3>
+        First Name: {{firstName}}</br>
+        Last Name: {{lastName}}</br>
+        Street Address: {{streetAddress}}</br>
+        City: {{cityAddress}}</br>
+        State: {{stateOf}}</br>
+        Country: {{countryName}}</br>
+        ColorWays: {{selectedColors}}</br>
+        Status: {{alpacaStatus}}</br>
+        Rating: {{rateStatus}}</br>
+      </div>
+      </form>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="lib/script.js"></script>
+  </body
