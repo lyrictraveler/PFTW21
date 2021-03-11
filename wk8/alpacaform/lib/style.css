@@ -1,5 +1,6 @@
 /* Add your styles here */
 body {
+  font-family: 'Courgette', cursive;
   background-color: skyblue;
 }
 
@@ -7,7 +8,12 @@ h1 {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  color: skyblue;
+  font-size: .8rem;
+}
 
+h2 {
+  text-align: center;
 }
 
 form {
@@ -35,4 +41,11 @@ ul {
 }
 li {
    margin: 5px 0;
+}
+
+div.output {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px;
+  background-color: peru;
 }
