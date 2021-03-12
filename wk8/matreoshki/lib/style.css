@@ -1,0 +1,109 @@
+/* Add your styles here */
+/* Add your styles here */
+html {
+  font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
+  font-family: 'Russo One', sans-serif;
+  /*background: #015bbb;*/
+  background: #0078D3;
+  color: whitesmoke;
+}
+
+/* .container {
+  display: grid;
+  grid-template-areas: 
+            "title title",
+            "side main";
+  grid-template-columns: 1fr 500px;
+  grid-template-rows: auto 1fr;
+ 
+}*/
+
+table {
+  width: 100%;
+  margin: 20px auto;
+  table-layout: auto;
+}
+
+.fixed {
+  table-layout: fixed;
+}
+
+table,
+td,
+th {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-width:5px;  
+  /* for some reason, the border style below has the effect of erasing the grid lines, which I like, so I'm keeping it */
+  border-style: double red; 
+  text-align: center;
+}
+
+.w {
+  width: 500px;
+}
+
+.matreoshki-title {
+  margin: 10px auto;
+  padding: 50px;
+  text-align: center;
+  font-weight: 400;
+  color: whitesmoke;
+  font-style: oblique;
+  border-width:5px;  
+  border-style:groove;
+}
+
+.list-container {
+  table-layout: fixed;
+  width: 100%;  
+  padding: 5px;
+  color: white;
+}
+
+.list-head {
+  /*font-weight: 200;*/
+  font-size: 16px;
+
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.image, .name, .acquired, .count, .isArtisan, .description {
+  width: 45%;
+  text-align: center;
+  font-family: sans-serif;
+/* margin: 20px 20px 20px 20px auto; */
+}
+
+.cell {
+  text-align: center;
+  color: black;
+  font-family: sans-serif
+}
+
+.odd {
+  background: whitesmoke;
+}
+
+.even {
+  background: #0078D3;
+}
+
+.even .cell {
+  color: whitesmoke;
+}
+
+.pretty {
+  font-style: oblique;
+
+}
+
+p {
+  font-family: sans-serif;
+  color: whitesmoke;
+}

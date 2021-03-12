@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/style.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+          <form>
+    <h1>A Handy Calculator*<h1>
+    <div id="calcApp">
+
+        <div>
+          <input v-model.number="firstNum" type="number" placeholder="first number">
+          <p>
+          <select v-model="operation">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">	&times;</option>
+            <option value="divide">	&divide;</option>
+          </select>
+          </p>
+          <input v-model.number="secondNum" type="number" placeholder="second number">
+        </div>
+        <button class="sum" v-on:click="calculate(firstNum,secondNum)" type="button">Tell Me!</button>
+
+      <div>
+        <!--Operation: {{operation}}<br>-->
+        Total: {{total}}
+        <p class="star">
+        *for counting alpacas and other sheepish animals
+        </p>
+        
+    </div>
+          </form>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="lib/script.js"></script>
+  </body>
+</html>

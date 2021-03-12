@@ -1,0 +1,42 @@
+
+body {
+  font-family: 'Courgette', cursive;
+  background: peru;
+  color: navy;
+  padding-top: 50px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 50px;
+  border-style: outset;
+  border-radius: 10px;
+  background: aliceblue;
+}
+
+div {
+  margin: 10px 0;
+}
+
+button,
+select,
+input {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.sum {
+  background: navy;
+  color: peru;
+  padding: 10px;
+  border-radius: 25px;
+  font-family: 'Courgette', cursive;
+}
+
+.star {
+  font-size: .8rem;
+  padding-bottom: 50px;
+}

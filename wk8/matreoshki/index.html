@@ -41,28 +41,37 @@
             <td class="cell">{{doll.count}}</td>
             <!--<td class="cell">{{doll.isArtisan}}</td>-->
             <td class="cell">{{doll.description}}</td>
-            <td><button type ="button" v-on:click="deleteDoll(doll)">delete</button></td>
+            <td><button type ="button" v-on:click="deleteDoll(doll)">Delete</button></td>
             </tr>
           </tbody>
         </table>
         <p>*Dolls listed in italics are considered "pretty" by the collector. </p>
     </div>
-    <form v-on:submit.prevent="addLight">
+    <form v-on:submit.prevent="addDoll">
       <fieldset>
         <legend>Add a doll</legend>
         <div class="form-group">
-          <label>Type <input v-model="typeInput" type="text"></label>
+          <label>Photo<input v-model="imageInput" type="text"></label>
         </div>
         <div class="form-group">
-          <label>Location <input v-model="locationInput" type="text"></label>
+          <label>Acquired<input v-model="acquiredInput" type="date"></label>
         </div>
         <div class="form-group">
-          <label>Install Date <input v-model="dateInput" type="date"></label>
+          <label>Count<input v-model="countInput" type="text"></label>
         </div>
+        <!--<div class="form-group">
+          <label>Artisan</label>
+          <input
+            type="checkbox"
+            v-model="isArtisanInput"
+          />
+        </div>-->
+        <div class="form-group">
+          <label>Description<input v-model="descriptionInput" type="text"></label>
         <div class="form-group">
           <label>ID <input v-model="idInput" type="text"></label>
         </div>
-        <button type="submit">Add Light</button>
+        <button type="submit">Add Doll</button>
       </fieldset>
     </form>
   </div>
