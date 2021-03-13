@@ -70,8 +70,7 @@ var vm = new Vue({
         }
       })
     },
-    addDoll: function (e) {
-      e.preventDefault();
+    addDoll: function () {
       let newDoll = {
         image: this.imageInput,
         name: this.nameInput,
