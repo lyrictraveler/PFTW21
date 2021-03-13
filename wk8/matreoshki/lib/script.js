@@ -53,8 +53,9 @@ const russianDollsArray = [
     dolls: russianDollsArray
   },
   methods: {
-    deleteLight: function (dollObject) {
-      this.dollss = this.dolls.filter(function(doll){
+    deleteDoll: function (dollObject) {
+      console.log("doll", dollObject)
+      this.dolls = this.dolls.filter(function(doll){
         if (doll.id !== dollObject.id) {
           return true;
         } else {
@@ -77,5 +78,3 @@ const russianDollsArray = [
     }
   }
 });
-
-
