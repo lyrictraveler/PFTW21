@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="lib/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
-    <title>&#x1FA86; Matreoshki</title>
+    <title>Matreoshki</title>
   </head>
 
   <body>
@@ -30,8 +30,7 @@
             <th class="action">Action</th>
           </thead>
           <tbody>
-            <tr v-for="(doll, index) in dolls" 
-            v-bind:class="{
+            <tr v-for="(doll, index) in dolls" v-bind:class="{
               even: (index + 1) % 2 === 0, 
               odd: (index + 1) % 2 !==0,
               pretty: doll.isArtisan===true}">
@@ -46,7 +45,6 @@
           </tbody>
         </table>
         <p>*Dolls listed in italics are considered "pretty" by the collector. </p>
-    </div>
     <form v-on:submit.prevent="addDoll">
       <fieldset>
         <legend>Add a doll</legend>
