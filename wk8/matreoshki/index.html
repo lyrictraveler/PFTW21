@@ -8,8 +8,8 @@
   </head>
 
   <body>
-    <div class="main">
       <h1 class="matreoshki-title">Russian Nesting Dolls*</h1>
+      <div class="main">
       <div id="dolls-list" v-cloak>
         <table class="list-container">
           <colgroup>
@@ -23,8 +23,9 @@
           <thead class="list-head">
             <th class="image">Photo</th>
             <th class="name">Name</th>
-            <th class="acquired">Acquired</th>
-            <th class="count">Count</th>
+            <th class="acquired">Date</th>
+            <th class="count">Number
+            </th>
             <!--<th class="isArtisan">Artisan</th>-->
             <th class="description">Description</th>
             <th class="action">Action</th>
@@ -39,7 +40,7 @@
             <td class="cell">{{doll.acquired}}</td>
             <td class="cell">{{doll.count}}</td>
             <!--<td class="cell">{{doll.isArtisan}}</td>-->
-            <td class="cell">{{doll.description}}</td>
+            <td class="cell__description">{{doll.description}}</td>
             <td><button type ="button" v-on:click="deleteDoll(doll)">Delete</button></td>
             </tr>
           </tbody>

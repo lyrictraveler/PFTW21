@@ -8,25 +8,33 @@ html {
   color: whitesmoke;
 }
 
-/* .container {
-  display: grid;
-  grid-template-areas: 
-            "title title",
-            "side main";
-  grid-template-columns: 1fr 500px;
-  grid-template-rows: auto 1fr;
- 
-}*/
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-container {
+  /*table-layout: fixed;*/
+  width: 100%;  
+  padding: 5px;
+  color: white;
+}
+
+.list-head {
+  /*font-weight: 200;*/
+  font-size: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
 
 table {
   width: 100%;
-  margin: 20px auto;
   table-layout: auto;
 }
 
-.fixed {
+/*.fixed {
   table-layout: fixed;
-}
+}*/
 
 table,
 td,
@@ -34,18 +42,6 @@ th {
   border-collapse: collapse;
 }
 
-th,
-td {
-  padding: 10px;
-  border-width:5px;  
-  /* for some reason, the border style below has the effect of erasing the grid lines, which I like, so I'm keeping it */
-  border-style: double red; 
-  text-align: center;
-}
-
-.w {
-  width: 500px;
-}
 
 .matreoshki-title {
   margin: 10px auto;
@@ -58,32 +54,23 @@ td {
   border-style:groove;
 }
 
-.list-container {
-  table-layout: fixed;
-  width: 100%;  
-  padding: 5px;
-  color: white;
-}
-
-.list-head {
-  /*font-weight: 200;*/
-  font-size: 16px;
-
-  padding: 25px;
-  margin-bottom: 25px;
-}
-
-.image, .name, .acquired, .count, .isArtisan, .description {
-  width: 45%;
-  text-align: center;
+.image, .name, .acquired, .count, .isArtisan, .description .action {
+  /*width: 100%;*/
+  text-align: left;
   font-family: sans-serif;
-/* margin: 20px 20px 20px 20px auto; */
 }
 
 .cell {
   text-align: center;
   color: black;
   font-family: sans-serif
+}
+
+.cell__description {
+  text-align: left;
+  color: black;
+  font-family: sans-serif
+
 }
 
 .odd {
@@ -106,4 +93,7 @@ td {
 p {
   font-family: sans-serif;
   color: whitesmoke;
+}
+
+.imageInput {
 }
