@@ -95,5 +95,32 @@ p {
   color: whitesmoke;
 }
 
-.imageInput {
+.new-doll-form fieldset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.new-doll-form {
+  margin-top: 20px;
+}
+
+.new-doll-form div {
+  /*margin: 40px 0;*/
+  width: 150px;
+  text-align: left;
+}
+
+.new-doll-form div label {
+  max-width: 100px;
+}
+
+.new-doll-form input {
+  max-width: 200px;
+  display: block;
+}
+
+button {
+  display: block;
 }

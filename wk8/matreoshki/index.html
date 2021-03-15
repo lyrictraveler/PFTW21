@@ -46,29 +46,27 @@
           </tbody>
         </table>
         <p>*Dolls listed in italics are considered "pretty" by the collector. </p>
-    <form v-on:submit.prevent="addDoll">
-      <fieldset>
+    <form v-on:submit.prevent="addDoll" class="new-doll-form">
+      <fieldset class="new-doll-form">
         <legend>Add a doll</legend>
-        <div class="form-group">
-          <label>Photo<input v-model="imageInput" type="text"></label>
+        <div class="new-doll-form">
+          <label class="new-doll-form">Photo<input class="new-doll-form" v-model="imageInput" type="text"></label>
         </div>
-        <div class="form-group">
-          <label>Acquired<input v-model="acquiredInput" type="date"></label>
+        <div class="new-doll-form">
+          <label class="new-doll-form">Acquired<input class="new-doll-form" v-model="acquiredInput" type="date"></label>
         </div>
-        <div class="form-group">
-          <label>Count<input v-model="countInput" type="text"></label>
+        <div class="new-doll-form">
+          <label class="new-doll-form">Count<input class="new-doll-form" v-model="countInput" type="text"></label>
         </div>
-        <!--<div class="form-group">
-          <label>Artisan</label>
-          <input
-            type="checkbox"
-            v-model="isArtisanInput"
-          />
-        </div>-->
-        <div class="form-group">
-          <label>Description<input v-model="descriptionInput" type="text"></label>
-        <div class="form-group">
-          <label>ID <input v-model="idInput" type="text"></label>
+
+        <div class="new-doll-form">
+          <label class="new-doll-form">Description</label>
+
+         <textarea id="description" class="new-doll-form" v-model="descriptionInput"></textarea>
+         </div>
+
+        <div class="new-doll-form">
+          <label class="new-doll-form">ID <input class="new-doll-form" v-model="idInput" type="text"></label>
         </div>
         <button type="submit">Add Doll</button>
       </fieldset>
