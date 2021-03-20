@@ -57,7 +57,7 @@ th {
   border-style:groove;
 }
 
-.image, .name, .acquired, .count, .isArtisan, .description .action {
+.image, .name, .acquired, .count, .description {
   /*width: 100%;*/
   text-align: left;
   font-family: sans-serif;
@@ -73,7 +73,8 @@ th {
 .cell__description {
   text-align: left;
   color: black;
-  font-family: sans-serif
+  font-family: sans-serif;
+  padding: 20px;
 
 }
 
