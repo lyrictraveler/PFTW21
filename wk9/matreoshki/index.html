@@ -17,7 +17,6 @@
             <col>
             <col>
             <col>
-            <!--<col>-->
             <col class="w">
           </colgroup>
           <thead class="list-head">
@@ -26,22 +25,20 @@
             <th class="acquired">Date</th>
             <th class="count">Number
             </th>
-            <!--<th class="isArtisan">Artisan</th>-->
             <th class="description">Description</th>
-            <th class="action">Action</th>
+            <!--<th class="action">Action</th>-->
           </thead>
           <tbody>
             <tr v-for="(doll, index) in dolls" v-bind:class="{
               even: (index + 1) % 2 === 0, 
               odd: (index + 1) % 2 !==0,
-              pretty: doll.isArtisan===true}">
-            <td class="cell"><img v-bind:src="doll.image" class="photo"></td>
-            <td class="cell">{{doll.name}}</td>
-            <td class="cell">{{doll.acquired}}</td>
-            <td class="cell">{{doll.count}}</td>
-            <!--<td class="cell">{{doll.isArtisan}}</td>-->
-            <td class="cell__description">{{doll.description}}</td>
-            <td><button type ="button" v-on:click="deleteDoll(doll)">Delete</button></td>
+              pretty: doll.isArtisan===true}"
+              is="matreoshka-component"
+              v-bind:image="doll.image"
+              v-bind:name="doll.name"
+              v-bind:acquired="doll.acquired"
+              v-bind:count="doll.count"
+              v-bind:description="doll.description">
             </tr>
           </tbody>
         </table>
