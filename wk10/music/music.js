@@ -1,11 +1,12 @@
+
 Vue.component('streaming-track', {
     template: `<div class="track">
         <h3>{{track.title}}</h3>
         <div><img v-bind:src="track.cover" alt=""></div>
         <small>{{track.artist}}</small>
         </div>`,
-    props: ['track']
-})
+    props: ['track'],
+
     computed: {
         trending: function () {
             const delta = this.track.rank - this.track.position.positionLastWeek;
@@ -19,6 +20,7 @@ Vue.component('streaming-track', {
         }
     }
 });
+
 const vm = new Vue({
     el: "#musicApp",
     data: {
@@ -32,5 +34,6 @@ const vm = new Vue({
                 vm.tracks = response.data;
                 console.log(vm.tracks);
             });
+
     }
 })
