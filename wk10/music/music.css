@@ -23,6 +23,15 @@ html {
   margin: 0;
   font-size: 14px;
 }
+.track.no-change {
+  border-color: blue;
+}
+.track.up {
+  border-color: green;
+}
+.track.down {
+  border-color: red;
+}
 .track img {
   width: 100%;
   max-width: 53px;
