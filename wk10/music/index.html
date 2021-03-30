@@ -11,6 +11,11 @@
   </head>
   <body>
     <h1>Billboard Top Streaming Tracks</h1>
+    <p>
+      <span style="color: blue">Blue</span> border = No Change<br />
+      <span style="color: red">Red</span> border = Down<br />
+      <span style="color: green">Green</span> border = Up
+    </p>
     <div id="musicApp" class="track-wrapper">
       <streaming-track v-bind:track="song" v-for="song in tracks">
       </streaming-track>
