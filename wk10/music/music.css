@@ -1,12 +1,16 @@
 html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: gainsboro;
 }
+
 .track-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  background: gainsboro;
 }
+
 .track {
   width: 144px;
   border: 3px solid black;
