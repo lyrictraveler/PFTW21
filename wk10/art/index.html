@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
-    <link rel="stylesheet" href="music.css" />
-    <title>City Bikes List</title>
+    <link rel="stylesheet" href="art.css" />
+    <title>Art Department List</title>
   </head>
   <body>
-    <h1>City Bikes Data</h1>
-    <div id="citybikeApp" class="bike-wrapper">
-      <div v-bind:track="song" v-for="song in tracks">
-      </div>
+    <h1>Art Departments at the Met</h1>
+    <div id="artApp" class="art-wrapper">
+      <art-department v-bind:room="department" v-for="department in departments">
+      </art-department>
     </div>
-    <script src="bikes.js"></script>
+    <script src="art.js"></script>
   </body>
 </html>
