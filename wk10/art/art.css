@@ -1,24 +1,49 @@
 html {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   background: gainsboro;
 }
 
+header {
+  align-items: center;
+  background: #BACADB;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display';
+  justify-content: center;
+  padding: 25px;
+  padding-bottom: 0;
+}
+
+ img.mat {
+	box-sizing: border-box;
+	width: 80%; height: auto;
+	display: block;
+	margin: 4rem auto;
+	padding: 10%;
+	background: #F4F0EC;
+	border: 8px ridge gold;
+  box-shadow: 0 0 0 50px  gainsboro inset;
+}
+
 .art-wrapper {
+  background: #BACADB;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: gainsboro;
+  padding: 40px;
 }
 
-.department.displayName{
-  width: 144px;
-  border: 3px solid black;
-  background: #ccc;
-  text-align: center;
-  padding: 10px;
+.department {
+  border: 4px ridge gold;
+  background: gainsboro;
   display: flex;
   flex-direction: column;
+  font-family: 'Playfair Display';
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 144px;
 }

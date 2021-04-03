@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="art.css" />
     <title>Art Department List</title>
   </head>
   <body>
+    <header>
     <h1>Art Departments at the Met</h1>
+    <img class="mat" src="./img/met.jpg" alt="street view Metropolitan Museum of Art">
+  </header>
     <div id="artApp" class="art-wrapper">
-      <art-department v-bind:department="department" v-for="department in departments">
-      </art-department>
+      <met-departments v-bind:display-name="department.displayName" vbind:department-id="department.departmentId" v-for="department in departments">
+      </met-departments>
     </div>
     <script src="art.js"></script>
   </body>
