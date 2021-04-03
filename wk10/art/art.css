@@ -1,34 +1,35 @@
 html {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Playfair Display', serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   background: gainsboro;
 }
 
 header {
   align-items: center;
-  background: #BACADB;
+  background: #bacadb;
   display: flex;
   flex-direction: column;
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 1.5rem;
   justify-content: center;
   padding: 25px;
   padding-bottom: 0;
 }
 
- img.mat {
-	box-sizing: border-box;
-	width: 80%; height: auto;
-	display: block;
-	margin: 4rem auto;
-	padding: 10%;
-	background: #F4F0EC;
-	border: 8px ridge gold;
-  box-shadow: 0 0 0 50px  gainsboro inset;
+img.mat {
+  box-sizing: border-box;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 4rem auto;
+  padding: 10%;
+  background: #f4f0ec;
+  border: 8px ridge gold;
+  box-shadow: 0 0 0 50px gainsboro inset;
 }
 
 .art-wrapper {
-  background: #BACADB;
+  background: #bacadb;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -41,7 +42,7 @@ header {
   background: gainsboro;
   display: flex;
   flex-direction: column;
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   justify-content: space-between;
   margin: 10px;
   padding: 10px;
