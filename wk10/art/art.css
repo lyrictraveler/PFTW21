@@ -18,11 +18,11 @@ header {
 
 img.mat {
   box-sizing: border-box;
-  width: 80%;
+  width: 50%;
   height: auto;
   display: block;
-  margin: 4rem auto;
-  padding: 10%;
+  margin: 2rem auto;
+  padding: 5%;
   background: #f4f0ec;
   border: 8px ridge gold;
   box-shadow: 0 0 0 50px gainsboro inset;
