@@ -1,7 +1,6 @@
 Vue.component("met-departments", {
   template: `<div class="department">
         <h3>{{displayName}}</h3>
-        <small>{{departmentId}}</small>
         </div>`,
   props: ["departmentId", "displayName"],
 });
