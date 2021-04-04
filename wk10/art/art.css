@@ -44,8 +44,8 @@ img.mat {
   flex-direction: column;
   font-family: "Playfair Display";
   justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
+  margin: 15px;
+  padding: 20px;
   text-align: center;
   width: 144px;
 }
