@@ -16,6 +16,7 @@ header {
   padding-bottom: 0;
 }
 
+/* The code for the matted image is inspired by http://thenewcode.com/721/Sophisticated-Image-Matting-Effects-With-CSS */
 img.mat {
   box-sizing: border-box;
   width: 50%;
