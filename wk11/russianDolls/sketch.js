@@ -7,6 +7,7 @@ var g;
 var b;
 var a;
 
+// Reload the page to see color-changing dolls. Wish I could figure out how to make each of the dolls a different color rather than all the same!
 function setup() {
   createCanvas(480, 120);
   randomColor = color(random(255), random(255), random(255));
@@ -17,6 +18,7 @@ function draw() {
   background("silver");
 
   randomSeed(0);
+  // See above. Effort to rotate the angle does not work. 
   for (var i = 35; i < width + 40; i += 40) {
     if (i % 5 == 0) {
       rot_angle = 20;
@@ -29,7 +31,7 @@ function draw() {
 }
 
 
-//The nestingdoll is derived from the owl function found in our Make text
+// The nestingdoll is derived from the owl function found in our Make text.
 function nestingdoll(x, y, s) {
   push();
   translate(x, y);
