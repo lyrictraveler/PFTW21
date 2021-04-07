@@ -1,3 +1,5 @@
+// I looked at this site to try to randomize the angle and the transparency of the dolls in a loop, but I couldn't get it to work <https://forum.processing.org/two/discussion/21006/how-to-give-random-colour-and-transparency-to-an-object-class-from-an-array-in-the-object>
+
 let rot_angle // This doesn't work; I don't know why. No error messages. 
 
 function setup() {
