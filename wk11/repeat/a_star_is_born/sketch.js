@@ -1,3 +1,5 @@
+// This was initially based on a halftone dot exercise in Make. I wanted to make repeating stars in a night sky, but when I added the timed feature (or when I added the star), that kind of repetition disappeared :-( The star might be flickering, but that could be my astignmatism. In any case, there are not multiple stars and I do not understand why. 
+
 var time1 = 2000;
 var time2 = 4000;
 var x = 0;
