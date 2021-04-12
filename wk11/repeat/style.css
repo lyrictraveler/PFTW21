@@ -16,4 +16,7 @@ h1 {
 .text {
   padding: 50px;
 }
+.dolls {
+  margin: 0, auto;
+}
 ul { list-style-type: none; }
