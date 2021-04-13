@@ -6,6 +6,7 @@ var x = 0;
 
 function setup() {
   createCanvas(400, 400);
+  background("midnightblue");
 }
 
 function draw() {
@@ -19,7 +20,7 @@ function draw() {
       }
     }
   } else if (currentTime > time1) {
-    background(0);
+    //background("midnightblue");
   }
 
   function star(x, y, radius1, radius2, npoints) {
