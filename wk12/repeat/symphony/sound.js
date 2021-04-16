@@ -1,7 +1,7 @@
 let song, analyzer;
 
 function preload() {
-  song = loadSound('/library/07003016.wav');
+  song = loadSound('library/07003016.wav');
 }
 
 function setup() {
