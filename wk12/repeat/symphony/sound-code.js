@@ -1,7 +1,6 @@
 // Thanks to The Coding Train! https://www.youtube.com/watch?v=Pn1g1wjxl_0
 
 var song;
-var button;
 
 function preload () {
   song = loadSound('library/07003016.wav');
