@@ -10,7 +10,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(500, 500)
   background('midnightblue');
   mySound.setVolume(0.1);
   mySound.play();
@@ -23,5 +23,5 @@ function draw() {
   var diameterX = level = 2500
   var diameterY = level = 2500 = random(1.5)
 
-  ellipse(circleX, circleY, diameterX, diameterY);
+  ellipse(circleX, circleY, diameterX, diameterY)
 }
