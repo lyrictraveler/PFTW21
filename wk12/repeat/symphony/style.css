@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  color: oldlace;
 }
 canvas {
   display: block;
@@ -12,12 +13,13 @@ h1 {
 html {
   font-family: "Montserrat", sans-serif;
   font-family: "Playfair Display", serif;
-  background: #bacadb;
+  background: maroon;
+
 }
 
 header {
   align-items: center;
-  background: #bacadb;
+  background: maroon;
   display: flex;
   flex-direction: column;
   font-family: "Playfair Display";
@@ -25,13 +27,4 @@ header {
   justify-content: center;
   padding: 25px;
   padding-bottom: 0;
-}
-
-.sound-wrapper {
-  background: #bacadb;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 40px;
 }
