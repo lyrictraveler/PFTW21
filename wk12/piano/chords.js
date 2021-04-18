@@ -20,7 +20,7 @@ function preload () {
   sew = loadSound('library/442981__pacway__sol-g.m4a');
 }
 
-// I probably could have used a for loop here to position the buttons, but I wasn't sure how to integrate that with designated colors.
+// I probably could have used a for loop here to position the buttons, but I wasn't sure how to integrate that with designated colors and different sounds. And this worked.
 function setup() {
   canvas = createCanvas(1000, 1000);
   canvas.position(500, 200); //relative to the page
