@@ -13,12 +13,6 @@ let button3;
 let button4;
 let button5;
 
-//let col1 = color('red');
-//let col2 = color('yellow');
-//let col3 = color('green');
-//let col4 = color('blue');
-l//et col5 = color('violet');
-
 function preload () {
   doe = loadSound('library/442980__pacway__do-c.m4a');
   ray = loadSound('library/442983__pacway__re-d.m4a');
@@ -27,6 +21,7 @@ function preload () {
   sew = loadSound('library/442981__pacway__sol-g.m4a');
 }
 
+// I probably could have used a for loop here to position the buttons, but I wasn't sure how to integrate that with designated colors.
 function setup() {
   canvas = createCanvas(1000, 1000);
   canvas.position(500, 200); //relative to the page
