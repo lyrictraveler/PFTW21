@@ -1,3 +1,5 @@
+// button construction from // https://www.youtube.com/watch?v=NcCEzzd9BGE
+
 var doe;
 var ray;
 var me;
@@ -12,33 +14,33 @@ let button5;
 
 function preload () {
   doe = loadSound('library/442980__pacway__do-c.m4a');
-  ray = loadSound('library/442980__pacway__re-d.m4a');
-  me = loadSound('library/442980__pacway__mi-e.m4a');
-  far = loadSound('library/442980__pacway__fa-f.m4a');
-  sew = loadSound('library/442980__pacway__sol-g.m4a');
+  ray = loadSound('library/442983__pacway__re-d.m4a');
+  me = loadSound('library/442977__pacway__mi-e.m4a');
+  far = loadSound('library/442979__pacway__fa-f.m4a');
+  sew = loadSound('library/442981__pacway__sol-g.m4a');
 }
 
 function setup() {
   canvas = createCanvas(1000, 1000);
-  canvas.position(0, 100); //relative to the page
+  canvas.position(500, 200); //relative to the page
   button1 = createButton('Do');
-  button1.position(100, 200);
+  button1.position(500, 200);
   button1.size(200, 100);
   button1.mousePressed(playDo);
   button2 = createButton('Re');
-  button2.position(100, 330);
+  button2.position(500, 330);
   button2.size(200, 100);
   button2.mousePressed(playRe);
   button3 = createButton('Mi');
-  button3.position(100, 460);
+  button3.position(500, 460);
   button3.size(200, 100);
   button3.mousePressed(playMi);
   button4 = createButton('Fa');
-  button4.position(100, 590);
+  button4.position(500, 590);
   button4.size(200, 100);
   button4.mousePressed(playFa);
   button5 = createButton('Sol');
-  button5.position(100, 720);
+  button5.position(500, 720);
   button5.size(200, 100);
   button5.mousePressed(playSol);
 }
@@ -47,7 +49,6 @@ function draw() {
   background('blue');
   fill(255, 0, 0);
 }
-
 function playDo () {
     doe.play();
 }
