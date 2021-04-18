@@ -1,4 +1,7 @@
+// I am crazy proud of this because mid-Saturday I did not see how it could happen. My goals were control and predictability which I believe are the sine qua non of a musical instrument (as opposed to a random sound generator).
 // I found videos 8.2, 8.3, and 8.4 of CodeTrain to be particularly helpful.
+// With more time (and skill), I would involve loops and maybe visual feedback to the user/musician
+// Sound files are from PACWAY at Freesound: https://freesound.org/people/PACWAY/
 
 var doe;
 var ray;
