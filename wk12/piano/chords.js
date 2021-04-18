@@ -24,23 +24,23 @@ function setup() {
   canvas = createCanvas(1000, 1000);
   canvas.position(500, 200); //relative to the page
   button1 = createButton('Do');
-  button1.position(500, 200);
+  button1.position(600, 200);
   button1.size(200, 100);
   button1.mousePressed(playDo);
   button2 = createButton('Re');
-  button2.position(500, 330);
+  button2.position(600, 330);
   button2.size(200, 100);
   button2.mousePressed(playRe);
   button3 = createButton('Mi');
-  button3.position(500, 460);
+  button3.position(600, 460);
   button3.size(200, 100);
   button3.mousePressed(playMi);
   button4 = createButton('Fa');
-  button4.position(500, 590);
+  button4.position(600, 590);
   button4.size(200, 100);
   button4.mousePressed(playFa);
   button5 = createButton('Sol');
-  button5.position(500, 720);
+  button5.position(600, 720);
   button5.size(200, 100);
   button5.mousePressed(playSol);
 }
