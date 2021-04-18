@@ -1,5 +1,4 @@
-// button construction from // https://www.youtube.com/watch?v=NcCEzzd9BGE 
-// I also found videos 8.2, 8.3, and 8.4 of CodeTrain to be particularly helpful.
+// I found videos 8.2, 8.3, and 8.4 of CodeTrain to be particularly helpful.
 
 var doe;
 var ray;
