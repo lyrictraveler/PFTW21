@@ -1,4 +1,5 @@
-// button construction from // https://www.youtube.com/watch?v=NcCEzzd9BGE
+// button construction from // https://www.youtube.com/watch?v=NcCEzzd9BGE 
+// I also found videos 8.2, 8.3, and 8.4 of CodeTrain to be particularly helpful.
 
 var doe;
 var ray;
@@ -24,7 +25,7 @@ function setup() {
   canvas = createCanvas(1000, 1000);
   canvas.position(500, 200); //relative to the page
   button1 = createButton('Do');
-  button1.position(600, 200);
+  button1.position(600, 200); //relative to canvas
   button1.size(200, 100);
   button1.mousePressed(playDo);
   button2 = createButton('Re');
