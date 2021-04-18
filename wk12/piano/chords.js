@@ -13,6 +13,12 @@ let button3;
 let button4;
 let button5;
 
+//let col1 = color('red');
+//let col2 = color('yellow');
+//let col3 = color('green');
+//let col4 = color('blue');
+l//et col5 = color('violet');
+
 function preload () {
   doe = loadSound('library/442980__pacway__do-c.m4a');
   ray = loadSound('library/442983__pacway__re-d.m4a');
@@ -27,22 +33,32 @@ function setup() {
   button1 = createButton('Do');
   button1.position(600, 200); //relative to canvas
   button1.size(200, 100);
+  button1.style('font-size', '18px');
+  button1.style('background-color', 'red');
   button1.mousePressed(playDo);
   button2 = createButton('Re');
   button2.position(600, 330);
   button2.size(200, 100);
+  button2.style('font-size', '18px');
+  button2.style('background-color', 'orange');
   button2.mousePressed(playRe);
   button3 = createButton('Mi');
   button3.position(600, 460);
   button3.size(200, 100);
+  button3.style('font-size', '18px');
+  button3.style('background-color', 'yellow');
   button3.mousePressed(playMi);
   button4 = createButton('Fa');
   button4.position(600, 590);
   button4.size(200, 100);
+  button4.style('font-size', '18px');
+  button4.style('background-color', 'green');
   button4.mousePressed(playFa);
   button5 = createButton('Sol');
   button5.position(600, 720);
   button5.size(200, 100);
+  button5.style('font-size', '18px');
+  button5.style('background-color', 'violet');
   button5.mousePressed(playSol);
 }
 
