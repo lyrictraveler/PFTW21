@@ -20,7 +20,7 @@ function draw() {
   
   fill('green');
   noStroke();
-  ellipse(250, 250, 25, 10);
+  ellipse(260, 240, 25, 10);
   
   translate(width/2, height/2)
   
