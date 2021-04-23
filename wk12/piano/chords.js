@@ -64,7 +64,7 @@ function draw() {
   fill(255, 0, 0);
 }
 function playDo () {
-    doe.play();
+    doe.play();   
 }
 
 function playRe () {
