@@ -17,7 +17,7 @@ function preload() {
 // create background and establish flies hiding in background, start annoying noise
 function setup() {
   createCanvas(600, 600);
-  background(204);
+
   fly1 = new Insect(width * 0.33, height / 2, 50);
   fly2 = new Insect(width / 2, height / 2, 20);
   buzz.play();
