@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/transformviolence.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
+    <title>Matreoshki</title>
+  </head>
+
+  <body>
+      <h1 class="matreoshki-title">Welling Hall: A Portfolio</h1>
+      <div class="main">
+      <div id="dolls-list" v-cloak>
+        <table class="list-container">
+          <colgroup>
+            <col class="w">
+            <col>
+            <col>
+            <col>
+            <col class="w">
+          </colgroup>
+          <thead class="list-head">
+            <th class="image">Photo</th>
+            <th class="name">Name</th>
+            <th class="acquired">Date</th>
+            <th class="count">Number
+            </th>
+            <th class="description">Description</th>
+            <!--<th class="action">Action</th>-->
+          </thead>
+          <tbody>
+            <tr v-for="(doll, index) in dolls" v-bind:class="{
+              even: (index + 1) % 2 === 0, 
+              odd: (index + 1) % 2 !==0,
+              pretty: doll.isArtisan===true}"
+              is="matreoshka-component"
+              v-bind:image="doll.image"
+              v-bind:name="doll.name"
+              v-bind:acquired="doll.acquired"
+              v-bind:count="doll.count"
+              v-bind:description="doll.description">
+            </tr>
+          </tbody>
+        </table>
+<!--     <form v-on:submit.prevent="addDoll" class="new-doll-form">
+      <fieldset class="new-doll-form">
+        <legend>Add a doll</legend>
+        <div class="new-doll-form">
+          <label class="new-doll-form">Photo<input class="new-doll-form" v-model="imageInput" type="text"></label>
+        </div>
+        <div class="new-doll-form">
+          <label class="new-doll-form">Acquired<input class="new-doll-form" v-model="acquiredInput" type="date"></label>
+        </div>
+        <div class="new-doll-form">
+          <label class="new-doll-form">Count<input class="new-doll-form" v-model="countInput" type="text"></label>
+        </div>
+
+        <div class="new-doll-form">
+          <label class="new-doll-form">Description</label>
+
+         <textarea id="description" class="new-doll-form" v-model="descriptionInput"></textarea>
+         </div>
+
+        <div class="new-doll-form">
+          <label class="new-doll-form">ID <input class="new-doll-form" v-model="idInput" type="text"></label>
+        </div>
+        <button type="submit">Add Doll</button>
+      </fieldset>
+    </form>
+  </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="lib/script.js"></script>
+    </div>
+  </body>
+</html>
