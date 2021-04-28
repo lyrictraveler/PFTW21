@@ -1,97 +1,71 @@
-// eslint-disable-next-line no-unused-expressions
-Vue.component('matreoshka-component', {
-  template: `<tr class="dolls-container" v-cloak>
+
+Vue.component('blog-post', {
+/*   template: `<tr class="item-container" v-cloak>
               <td class="cell"><img v-bind:src="image" class="photo"></td>
               <td class="cell">{{name}}</td>
-              <td class="cell">{{acquired}}</td>
-              <td class="cell">{{count}}</td>
+              <td class="cell">{{year}}</td>
+              <td class="cell">{{format}}}</td>
               <td class="cell__description">{{description}}</td>
               <td></td>
-            </tr>`,
-  props: ['image', 'name', 'acquired', 'count', 'description']
+            </tr>`, */
+  props: ['image', 'title', 'year', 'medium', 'description']
+  template: '<h3>{{ title }}</h3>'
 });
 
-const russianDollsArray = [
+const portfolioArray = {
   {
-    image: 'img/sovietdoll.jpg',
-    name: 'Soviet',
-    acquired: 1984,
-    count: 9,
-    isArtisan: false,
-    description:
-      'Nesting dolls mass-produced in the USSR for tourist purchases in hard currency. Poor quality stencil design in primary colors.',
+    image: '',
+    title: 'New Directions Grant Report',
+    year: 2013,
+    format: 'report',
+    description: 'This report documents my initial experiments in an art studio and the implications for pedagogy and my developing interest in emotional cognition.',
+    id: 2
+  },
+
+  {
+    image: '',
+    title: 'Things of Beauty',
+    year: 2009,
+    format: 'essay',
+    description: 'The genesis of my journey from college professor of International Relations to graduate student in art school begins with this essay.',
     id: 1
   },
 
   {
-    image: 'img/oniondomedoll.jpg',
-    name: 'Blue Nun',
-    acquired: 1989,
-    count: 5,
-    isArtisan: true,
-    description:
-      "Early glasnost' era hand-painted monochromatic nesting dolls featuring Russian Orthodox onion-dome church on each doll's apron.",
-    id: 2
-  },
-  {
-    image: 'img/malevichdoll.jpg',
-    name: 'Malevich',
-    acquired: 1990,
-    count: 5,
-    isArtisan: true,
-    description:
-      'Museum-quality post-Soviet hand-painted nesting dolls in style of avant-garde artist Kazimir Malevich.',
-    id: 3
-  },
-  {
-    image: 'img/fairytaledoll.jpg',
-    name: 'Firebird',
-    acquired: 1994,
-    count: 5,
-    isArtisan: true,
-    description:
-      'Intricately hand-decorated nesting dolls decorated with gold leaf and representing scenes from a traditional Russian folk tale.',
-    id: 4
-  },
-  {
-    image: 'img/putindoll.jpg',
-    name: 'Putin',
-    acquired: 2000,
-    count: 10,
-    isArtisan: false,
-    description:
-      'Mass-produced in post-Soviet factory for tourist consumption. Large example in genre of political nesting dolls. From largest to smallest, dolls represent Putin, Yeltsin, Gorbachev, Brezhnev, Khrushchev, Stalin, Lenin, Marx, Engels, and Ivan the Terrible.',
-    id: 5
+    image: '',
+    title: 'Art Transforming Violence',
+    year: 2018,
+    format: 'interview',
+    description: 'This interview about my pop up show on Capitol Hill explains why I make art as a policy-relevant response to gun violence.',
+    id: 
   }
-];
+};
 
 var vm = new Vue({
-  el: '#dolls-list',
+  el: '#app',
   data: {
-    dolls: russianDollsArray,
-    imageInput: '',
-    nameInput: '',
-    acquiredInput: '',
-    isArtisan: '',
-    descriptionInput: '',
-    countInput: '',
-    idInput: ''
+    //I'd like to include an image with these posts.
+    posts: [
+      { id: 1, title: 'Things of Beauty', year: 2009, format: 'print essay', description: 'The genesis of my journey from college professor of International Relations to graduate student in art school begins with this essay' },
+      { id: 2, title: 'New Directions Grant Report', year: 2013, format: 'online report', description: 'This report documents my initial experiments in an art studio and the implications for pedagogy and my developing interest in emotional cognition.'},
+      { id: 3, title: 'Art Transforming Violence', year: 2018,
+      format: 'interview', description: 'This interview about my pop up show on Capitol Hill explains why I make art as a policy-relevant response to gun violence.', image: },
+    ]
   },
   methods: {
 
-    addDoll: function (e) {
+    addItem: function (e) {
       e.preventDefault();
-      const newDoll = {
+      const newItem = {
         image: this.imageInput,
         name: this.nameInput,
-        acquired: this.acquiredInput,
-        count: this.countInput,
-        isArtisan: this.isArtisanInput,
+        year: this.yearInput,
+        format: this.formatInput,
         description: this.descriptionInput,
         id: this.idInput
       };
-      this.dolls.push(newDoll);
+      this.items.push(newItem);
       this.typeInput = this.locationInput = this.dateInput = this.idInput = '';
     }
   }
-});
+})

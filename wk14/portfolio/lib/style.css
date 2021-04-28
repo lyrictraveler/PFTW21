@@ -1,10 +1,18 @@
 /* Add your styles here */
 /* Add your styles here */
+* {
+  box-sizing: border-box;
+}
+
 html {
-  font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
-  /*background: #015bbb;*/
-  background: #0078D3;
-  color: whitesmoke;
+  --teal-dark: #366273; 
+  --teal-light: #5D91A6;
+  --gray-dark: #293940;
+  --gray-dove: #DFEDF2;
+  --tan: #A69992;
+  --font-sans-serif: 'News Cycle', sans-serif;
+  --font-serif: 'Times New Roman', serif;
+  --font-cursive: 'Oleo Script Swash Caps', cursive;
 }
 
 main {
