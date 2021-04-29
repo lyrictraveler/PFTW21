@@ -70,7 +70,7 @@ const portfolioArray = [
   {
     image: "img/calculator.png",
     altText: "image of simple calculator", 
-    link: "https://github.com/lyrictraveler/PFTW21/tree/main/wk10/art",
+    link: "https://plnkr.co/plunk/coD7LJUt9e6CVXci",
     title: "A Handy Calculator",
     skills: "JavaScript, Vue",
     description: "Project for Web Development",
