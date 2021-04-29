@@ -1,93 +1,81 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="lib/transformviolence.css">
+    <link rel="stylesheet" href="lib/portfolio.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
     <title>Portfolio</title>
   </head>
 
+  <body>
 
-<!--I think need to be using v-bind here, but I'm not sure how. Goal is to to have items coming in at different angles (which I've done with the blog) so not a boring list.
+      <div id="items-list" class="main" v-cloak>
+        <table class="items-container">
+          <colgroup>
+            <col class="w">
+            <col>
+            <col>
+            <col>
+            <col class="w">
+          </colgroup>
+          <thead class="list-head">
+            <th class="image">Photo</th>
+            <th class="title">Title</th>
+            <th class="year">Year</th>
+            <th class="format">Format
+            </th>
+            <th class="description">Description</th>
+<!--             <th class="url">URL</th>
+            <th class="action">Action</th> -->
+          </thead>
+          <tbody>
+            <!--how do I style images here?-->
+            <tr v-for="(item, index) in items" v-bind:class="{
+              even: (index + 1) % 2 === 0, 
+              odd: (index + 1) % 2 !==0}"
+              is="portfolio-component"
+              v-bind:image="item.image" 
+              v-bind:title="item.title"
+              v-bind:year="item.year"
+              v-bind:format="item.format"
+              v-bind:description="item.description"
+              v-bind:url="item.url">
+            </tr>
+          </tbody>
+        </table>
 
-Big Question 1: how do I properly set up the HTML file so that the components are properly rendered? (Last time I used a table, but the list seems  more appropriate here.)
+<!-- <form v-on:submit.prevent="addItem" class="new-item-form">
+      <fieldset class="new-item-form">
+        <legend>Add an Item</legend>
+        <div class="new-item-form">
+          <label class="new-item-form">Photo<input class="new-item-form" v-model="imageInput" type="text"></label>
+        </div>
+        <div class="new-item-form">
+          <label class="new-item-form">Title<input class="new-item-form" v-model="titleInput" type="text"></label>
+        </div>
+        <div class="new-item-form">
+          <label class="new-item-form">Year<input class="new-item-form" v-model="yearInput" type="text"></label>
+        </div>
+        <div class="new-item-form">
+          <label class="new-item-form">Format<input class="new-item-form" v-model="formatInput" type="text"></label>
+        </div>
 
-Big Question 2: how do I put proper limits on the cells in the grid so that the items don't run into each other?
+        <div class="new-item-form">
+          <label class="new-item-form">Description</label>
 
-Can I check in with you again?
+         <textarea id="description" class="new-item-form" v-model="descriptionInput"></textarea>
+         </div>
 
-name, year, format, description-->
-
-<!--   <blog-post
-    v-for="post in posts"
-    v-bind:key="post.id"
-    v-bind:name="post.name"
-    v-bind:year="post.year"
-    v-bind:format="post.format"
-    v-bind:description="post.description"
-  ></blog-post> -->
-
-
-<body>
-
-<section id="app" v-cloak>
-  <div v-for="post in posts">
-    <blog-post
-    v-for="post in posts"
-    v-bind:key="post.id"
-    v-bind:name="post.name"
-    v-bind:year="post.year"
-    v-bind:format="post.format"
-    v-bind:description="post.description"
-  ></blog-post> 
+       <div class="new-item-form">
+          <label class="new-item-form">ID <input class="new-item-form" v-model="idInput" type="text"></label>
+        </div>
+        <button type="submit">New Item</button>
+      </fieldset>
+    </form> -->
   </div>
-</section>
-
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script src="lib/script.js"></script>
-
-</body>
-</html>
-
-
-<ul class="blog">
-    <li>
-        <h3>Things of Beauty</h3>
-        <p>The genesis of my journey from college professor of International Relations to graduate student in art school begins with <a href="Things_of_Beauty.pdf">this essay</a>.</p>
-    </li>
-    <li>
-        <h3>New Directions Grant Report</h3>
-        <p><a href="Swords_into_Plowshares_New_Directions_In.pdf">This report</a> documents my initial experiments in an art studio and the implications for pedagogy and my developing interest in emotional cognition.</p>
-    </li>
-    <li>
-        <h3>Art Transforming Violence</h3>
-        <p><a href="https://www.fcnl.org/updates/a-friend-in-washington-explores-art-faith-and-advocacy-at-fcnl-1667">This interview</a> about my pop up show on Capitol Hill explains why I make art as a policy-relevant response to gun violence.</p>
-    </li>
-    <li>
-        <img src="images/bullet_shells200x160.png" alt="*">
-    </li>
-    <li>
-        <img src="images/bullet_shells200x160.png" alt="*">
-    </li>
-    <li>
-        <img src="images/bullet_shells200x160.png" alt="*">
-    </li> 
-
-</ul>
-<header class="nav-bar">
-  <div class="container">
-  <h1 class="site-name">Welling Hall: Portfolio</h1>
-  <nav>
-    <ul class="nav-list">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="sculpture.html">Sculpture</a></li>
-      <li><a href=resources.html>Resources</a></li>
-      <li><a href="https://www.google.com/"><i class="fas fa-search"></i></a></li>
-    </ul>
-  </nav>
-</div>
-  Copyright © 2020 · All Rights Reserved · Welling Hall 
-</header>  
-
-</body>
+  <h1 class="portfolio-title">Portfolio</h1>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="lib/script.js"></script>
+    </div>
+  </body>
 </html>

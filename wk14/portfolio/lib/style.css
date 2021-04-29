@@ -1,18 +1,11 @@
 /* Add your styles here */
 /* Add your styles here */
-* {
-  box-sizing: border-box;
-}
-
 html {
-  --teal-dark: #366273; 
-  --teal-light: #5D91A6;
-  --gray-dark: #293940;
-  --gray-dove: #DFEDF2;
-  --tan: #A69992;
-  --font-sans-serif: 'News Cycle', sans-serif;
-  --font-serif: 'Times New Roman', serif;
-  --font-cursive: 'Oleo Script Swash Caps', cursive;
+  font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
+  font-family: 'Russo One', sans-serif;
+  /*background: #015bbb;*/
+  background: #0078D3;
+  color: whitesmoke;
 }
 
 main {
@@ -27,7 +20,6 @@ main {
   /*table-layout: fixed;*/
   width: 100%;  
   padding: 5px;
-  color: white;
 }
 
 .list-head {
@@ -35,6 +27,7 @@ main {
   font-size: 16px;
   padding: 25px;
   margin-bottom: 25px;
+  color: whitesmoke;
 }
 
 table {
@@ -53,7 +46,7 @@ th {
 }
 
 
-.matreoshki-title {
+.portfolio-title {
   margin: 10px auto;
   padding: 50px;
   text-align: center;
@@ -64,7 +57,7 @@ th {
   border-style:groove;
 }
 
-.image, .name, .acquired, .count, .description {
+.image, .title, .date, .format, .description {
   /*width: 100%;*/
   text-align: left;
   font-family: sans-serif;
@@ -107,7 +100,7 @@ p {
   color: whitesmoke;
 }
 
-.new-doll-form fieldset {
+.new-item-form fieldset {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -115,21 +108,21 @@ p {
   align-items: center;
 }
 
-.new-doll-form {
+.new-item-form {
   margin-top: 20px;
 }
 
-.new-doll-form div {
+.new-item-form div {
   /*margin: 40px 0;*/
   width: 150px;
   text-align: left;
 }
 
-.new-doll-form div label {
+.new-item-form div label {
   max-width: 100px;
 }
 
-.new-doll-form input {
+.new-item-form input {
   max-width: 200px;
   display: block;
 }
