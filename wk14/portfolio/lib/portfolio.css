@@ -163,7 +163,7 @@ th {
   border-style:groove;
 }
 
-.image, .title, .year, .format, .description, .url {
+.image, .title, .skills, .description, .link {
   /*width: 100%;*/
   text-align: left;
   font-family: sans-serif;
@@ -202,7 +202,7 @@ th {
   color: whitesmoke;
 }
 
-p {
+p, a {
   font-family: sans-serif;
   color: whitesmoke;
 }
@@ -240,9 +240,12 @@ button {
 }
 
 img {
- border-radius: 10%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
 }
 
-.item-image {
-  border-radius: 5%;
- }
+img:hover {
+    box-shadow: 0 0 2px 1px #c99d8c;
+}

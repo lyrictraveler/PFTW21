@@ -8,7 +8,7 @@
   </head>
 
   <body>
-
+    <h1 class="portfolio-title">Welling Hall: Web Design and Development</h1>
       <div id="items-list" class="main" v-cloak>
         <table class="items-container">
           <colgroup>
@@ -19,27 +19,22 @@
             <col class="w">
           </colgroup>
           <thead class="list-head">
-            <th class="image">Photo</th>
+            <th class="image">Project</th>
             <th class="title">Title</th>
-            <th class="year">Year</th>
-            <th class="format">Format
-            </th>
+            <th class="skills">Skills</th>
             <th class="description">Description</th>
-<!--             <th class="url">URL</th>
-            <th class="action">Action</th> -->
           </thead>
           <tbody>
             <!--how do I style images here?-->
-            <tr v-for="(item, index) in items" v-bind:class="{
+            <tr v-for="(item, index) in items" v-bind:link="item.link" v-bind:class="{
               even: (index + 1) % 2 === 0, 
               odd: (index + 1) % 2 !==0}"
               is="portfolio-component"
               v-bind:image="item.image" 
+              v-bind:alt-text="item.imageAlt"
               v-bind:title="item.title"
-              v-bind:year="item.year"
-              v-bind:format="item.format"
-              v-bind:description="item.description"
-              v-bind:url="item.url">
+              v-bind:skills="item.skills"
+              v-bind:description="item.description"></tr>
             </tr>
           </tbody>
         </table>
@@ -73,9 +68,8 @@
       </fieldset>
     </form> -->
   </div>
-  <h1 class="portfolio-title">Portfolio</h1>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="lib/script.js"></script>
+    <script src="lib/mcad.js"></script>
     </div>
   </body>
 </html>
