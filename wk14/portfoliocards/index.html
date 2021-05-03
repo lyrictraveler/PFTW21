@@ -3,10 +3,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="lib/style.css" />
+    <title>elderfriendlydesign</title>
   </head>
 
   <body>
-    <h1>Portfolio components</h1>
+    <h1>Web Design Portfolio</h1>
     <div id="card">
       <!--then use v-for to display a component for both of the objects in the portfolio array-->
       <div v-for="item in items">
@@ -19,6 +20,9 @@
         ></portfolio-component>
       </div>
     </div>
+    <footer>
+    <h3>(c) <a href="mailto:wellinghall@gmail.com">Welling Hall</a> | 2021</h3>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="lib/script.js"></script>
   </body>

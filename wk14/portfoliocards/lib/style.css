@@ -22,6 +22,7 @@ body {
 
 h1 {
   padding: 50px;
+  font-size: 3em;
 }
 
 h1, #card {
@@ -32,14 +33,24 @@ h1, #card {
   justify-content: center;
 }
 
+h3 {
+  padding: 50px;
+}
+
 .portfolio-container {
   background: #7D858C;
-  border: 4px solid #3E4A59;
+  border: 6px double #d9d9d9;
   border-radius: 25px;
   width: 260px;
   padding: 30px;
   margin: 20px;
   color: #f2f2f2;
+  font-size: 1.2em;
+}
+
+.portfolio-container h2 {
+  font-size: 1.2em;
+
 }
 
 .project-title {
@@ -57,5 +68,49 @@ h1, #card {
 
 .content {
   padding: 15px;
+  font-family: Roboto;
+}
+
+.portfolio-container 
+  a:hover {
+  border: 6px solid #E9F936;
+  padding: 10px;
+  color: #E9F936;
+  background: #e9f936;
+}
+
+.bio-container {
+  background: #7D858C;
+  border: 6px double #d9d9d9;
+  border-radius: 25px;
+  padding: 30px;
+  margin: 20px;
+  color: #f2f2f2;
+  font-size: 1.2em;
+}
+
+footer a:link {
+  text-emphasis: none;
+  text-decoration: none;
+  color: #7D858C;
+}
+
+footer a:hover {
+  color: #3e4a59;
+  background: #e9f936;
+  padding: 10px;
+}
+
+.bio-container a:link {
+  text-emphasis: none;
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+}
+
+.bio-container a:hover {
+  color: #3e4a59;
+  background: #e9f936;
+  padding: 10px;
 }
 
