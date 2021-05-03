@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css" />
+  </head>
+
+  <body>
+    <h1>Portfolio components</h1>
+    <div id="card">
+      <!--then use v-for to display a component for both of the objects in the portfolio array-->
+      <div v-for="item in items">
+        <portfolio-component
+          v-bind:title="item.title"
+          v-bind:link="item.link"
+          v-bind:image="item.image" 
+          v-bind:alt-text="item.imageAlt"
+          v-bind:skills="item.skills"
+        ></portfolio-component>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="lib/script.js"></script>
+  </body>
+</html>
