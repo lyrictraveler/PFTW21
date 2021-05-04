@@ -47,7 +47,7 @@ var vm = new Vue({
         link: 'https://www.youtube.com/watch?v=QHSu7Vqz34A',
         image: 'img/noisyscreen.png',
         imageAlt: 'broken glass with disruptive words',
-        skills: 'design thinking, communication, Adobe Premier Rush',
+        skills: 'design thinking, research, UX, Adobe Premier Rush',
       },
       {
         title: 'CUCCS Blog',
