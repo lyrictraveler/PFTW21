@@ -127,7 +127,7 @@ h3 {
 .bio-container a:link {
   text-emphasis: none;
   text-decoration: none;
-  color: white;
+  color: black;
   text-decoration: underline;
 }
 
@@ -139,7 +139,7 @@ h3 {
 
 .bio-container 
   a:visited {
-  color: black;
+  color: #3e4a59;
 
 }
 
