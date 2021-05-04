@@ -58,22 +58,6 @@ h3 {
   font-size: 1.5em;
 }
 
-.portfolio-container:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  background: #f2f2f2;
-  border: 6px double #3e4a59;
-  box-shadow: 0 0 8px 8px #d9d9d9 inset;
-}
-
-.portfolio-container a:visited {
-border: 6px solid #E9F936;
-padding: 10px;
-color: #E9F936;
-background: #e9f936;
-}
-
 .project-title {
   font-size: 20px;
   font-weight: 400;
@@ -85,11 +69,6 @@ background: #e9f936;
   display: block;
   width: 220px;
   margin: 10px auto;
-}
-
-.skills {
-  padding: 15px;
-  line-height: 1.5em;
 }
 
 .beforeafter-container {
@@ -113,6 +92,28 @@ background: #e9f936;
   margin: 10px auto;
 }
 
+.skills {
+  padding: 15px;
+  line-height: 1.5em;
+}
+
+.portfolio-container:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background: #f2f2f2;
+    border: 6px double #3e4a59;
+    box-shadow: 0 0 8px 8px #d9d9d9 inset;
+}
+
+.portfolio-container 
+  a:visited {
+  border: 6px solid #E9F936;
+  padding: 10px;
+  color: #E9F936;
+  background: #e9f936;
+}
+
 .bio-container {
   background: #d9d9d9;
   border: 6px double #7D858C;
@@ -122,6 +123,7 @@ background: #e9f936;
   color: #3E4A59;
   font-size: 1.2em;
 }
+
 
 .bio-container a:link {
   text-emphasis: none;

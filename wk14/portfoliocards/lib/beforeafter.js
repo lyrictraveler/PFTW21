@@ -2,7 +2,7 @@
 
 // convert existing Vue instance into a reusable component
 
-//register the component using kabob-case so browser can recognize
+// register the component using kabob-case so browser can recognize
 
 Vue.component('beforeafter-component', {
   // templates are written in HTML form, a "configuration object" With multi-line HTML use the back tick `
@@ -42,7 +42,7 @@ var vm = new Vue({
         title: 'After',
         image: 'img/Bob_happy.jpg',
         imageAlt: 'man content'
-      },
-    ],
-  },
+      }
+    ]
+  }
 });

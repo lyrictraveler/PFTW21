@@ -2,7 +2,7 @@
 
 // convert existing Vue instance into a reusable component
 
-//register the component using kabob-case so browser can recognize
+// register the component using kabob-case so browser can recognize
 
 Vue.component('portfolio-component', {
   // templates are written in HTML form, a "configuration object" With multi-line HTML use the back tick `
@@ -17,8 +17,8 @@ Vue.component('portfolio-component', {
             </div>`,
 
   // use props to pass the portfolio data into the component
-  //we use props so that we can insert new data into our component, using v:bind to access those properties
-  props: ['title', 'link', 'image', 'imageAlt', 'skills'],
+  // we use props so that we can insert new data into our component, using v:bind to access those properties
+  props: ['title', 'link', 'image', 'imageAlt', 'skills']
 });
 
 // Your component should go above this line.
@@ -31,8 +31,7 @@ var vm = new Vue({
         link: 'https://www.westrichmondfriends.org/',
         image: 'img/wrfwebsite.jpeg',
         imageAlt: 'West Richmond Friends Meeting website',
-        skills:
-          'project management, testing and debugging'
+        skills: 'project management, testing and debugging'
       },
       {
         title: '10.000 Jaroj: Epizodo 114 de 99% Nevidebla',
@@ -40,14 +39,14 @@ var vm = new Vue({
           'https://docs.google.com/presentation/d/1w5BmH99gTMSc-HOqhEv1WsXYV2P9yjisVL5ACEM3zFM/present?usp=sharing',
         image: 'img/99invisible.png',
         imageAlt: 'eerie photo with bilingual text in English and Esperanto',
-        skills: 'project management, research, GoogleSuite',
+        skills: 'project management, research, GoogleSuite'
       },
       {
         title: 'My Design Practice',
         link: 'https://www.youtube.com/watch?v=QHSu7Vqz34A',
         image: 'img/noisyscreen.png',
         imageAlt: 'broken glass with disruptive words',
-        skills: 'design thinking, research, UX, Adobe Premier Rush',
+        skills: 'design thinking, research, UX, Adobe Premier Rush'
       },
       {
         title: 'CUCCS Blog',
@@ -68,7 +67,7 @@ var vm = new Vue({
         link: 'https://lyrictraveler.github.io/wrfnew_party2020/',
         image: 'img/holidayparty.png',
         imageAlt: 'Christmas tree with ornaments',
-        skills: 'project management, HTML, CSS, Grid',
+        skills: 'project management, HTML, CSS, Grid'
       },
 
       {
@@ -78,7 +77,7 @@ var vm = new Vue({
         title: 'Art Departments at the Met',
         skills: 'JavaScript, Restful APIs, Flex',
         description: 'Project for Web Development',
-        id: 2009,
+        id: 2009
       },
       {
         image: 'img/calculator.png',
@@ -87,7 +86,7 @@ var vm = new Vue({
         title: 'A Handy Calculator',
         skills: 'JavaScript, Vue',
         description: 'Project for Web Development',
-        id: 2009,
+        id: 2009
       },
       {
         image: 'img/keyboard.png',
@@ -96,8 +95,8 @@ var vm = new Vue({
         title: 'Digital Piano',
         skills: 'Sounds with JavaScript',
         description: 'Project for Web Development',
-        id: 2009,
-      },
-    ],
-  },
+        id: 2009
+      }
+    ]
+  }
 });
