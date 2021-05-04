@@ -32,7 +32,7 @@ var vm = new Vue({
         image: 'img/wrfwebsite.jpeg',
         imageAlt: 'West Richmond Friends Meeting website',
         skills:
-          'project management, blogging, testing and debugging, Constant Contact',
+          'project management, testing and debugging'
       },
       {
         title: '10.000 Jaroj: Epizodo 114 de 99% Nevidebla',
@@ -48,6 +48,13 @@ var vm = new Vue({
         image: 'img/noisyscreen.png',
         imageAlt: 'broken glass with disruptive words',
         skills: 'design thinking, communication, Adobe Premier Rush',
+      },
+      {
+        title: 'CUCCS Blog',
+        link: 'https://www.cuccs.org',
+        image: 'img/CUCCSblog.png',
+        imageAlt: 'blog page',
+        skills: 'project management, blogging, Constant Contact'
       },
       {
         title: 'FCNL Case Study',
