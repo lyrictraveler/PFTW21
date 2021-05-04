@@ -1,12 +1,4 @@
-// instructions:
-
-// convert existing Vue instance into a reusable component
-
-// register the component using kabob-case so browser can recognize
-
 Vue.component('portfolio-component', {
-  // templates are written in HTML form, a "configuration object" With multi-line HTML use the back tick `
-
   template: `<div class="portfolio-container  v-cloak">
                 <h2 class="project-title">{{title}}</h2>
                 <div class="image"><a v-bind:href="link">
@@ -15,13 +7,9 @@ Vue.component('portfolio-component', {
                 <div class="content">
                 <div class="skills">Skills: {{skills}}</div>
             </div>`,
-
-  // use props to pass the portfolio data into the component
-  // we use props so that we can insert new data into our component, using v:bind to access those properties
   props: ['title', 'link', 'image', 'imageAlt', 'skills']
 });
 
-// Your component should go above this line.
 var vm = new Vue({
   el: '#card',
   data: {

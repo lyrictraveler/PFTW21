@@ -1,12 +1,4 @@
-// instructions:
-
-// convert existing Vue instance into a reusable component
-
-// register the component using kabob-case so browser can recognize
-
 Vue.component('beforeafter-component', {
-  // templates are written in HTML form, a "configuration object" With multi-line HTML use the back tick `
-
   template: `<div class="beforeafter-container v-cloak">
                 <h2 class="project-title">{{title}}</h2>
                 <div class="image">
@@ -18,7 +10,6 @@ Vue.component('beforeafter-component', {
   props: ['title', 'image', 'imageAlt']
 });
 
-// Your component should go above this line.
 var vm = new Vue({
   el: '#card',
   data: {
