@@ -7,7 +7,7 @@
 Vue.component('portfolio-component', {
   // templates are written in HTML form, a "configuration object" With multi-line HTML use the back tick `
 
-  template: `<div class="portfolio-container v-cloak">
+  template: `<div class="portfolio-container  v-cloak">
                 <h2 class="project-title">{{title}}</h2>
                 <div class="image"><a v-bind:href="link">
                   <img v-bind:src="image" v-bind:alt="image-alt"/></a>

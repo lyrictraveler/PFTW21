@@ -97,12 +97,12 @@ h3 {
   line-height: 1.5em;
 }
 
-.portfolio-container 
-  a:hover {
-  border: 6px solid #E9F936;
-  padding: 10px;
-  color: #E9F936;
-  background: #e9f936;
+.portfolio-container:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 6px double #3e4a59;
+    box-shadow: 0 0 8px 8px #d9d9d9 inset;
 }
 
 .portfolio-container 
@@ -165,7 +165,7 @@ footer a:active {
 footer a:hover {
   color: #3e4a59;
   background: #e9f936;
-  padding: 10px;
+  padding: 12px;
 }
 
 
