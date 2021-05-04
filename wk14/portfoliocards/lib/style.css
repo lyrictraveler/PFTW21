@@ -8,9 +8,7 @@
 .Hofmann-—-Pastry-Classroom-5-hex { color: #0D0D0D; }
 
 */
-* {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+* 
 [v-cloak] {
   display: none;
 }
@@ -18,11 +16,14 @@
 body {
   background: #f2f2f2;
   color:#0d0d0d;
+  font-family: 'Merriweather', serif;
+  font-family: 'Alegreya', sans-serif;
 }
 
 h1 {
   padding: 50px;
   font-size: 3em;
+  font-family: 'Merriweather', serif;
 }
 
 h1, #card {
@@ -45,12 +46,11 @@ h3 {
   padding: 30px;
   margin: 20px;
   color: #f2f2f2;
-  font-size: 1.2em;
 }
 
 .portfolio-container h2 {
-  font-size: 1.2em;
-
+  font-size: 1.5em;
+  border: 2px solid #f2f2f2;
 }
 
 .project-title {
@@ -66,9 +66,10 @@ h3 {
   margin: 10px auto;
 }
 
-.content {
+.skills {
+  border: 2px solid pink;
   padding: 15px;
-  font-family: Roboto;
+  font-family: 'Alegreya',sans-serif;
 }
 
 .portfolio-container 
@@ -79,6 +80,11 @@ h3 {
   background: #e9f936;
 }
 
+.portfolio-container 
+  a:visited {
+  color: aliceblue;
+}
+
 .bio-container {
   background: #7D858C;
   border: 6px double #d9d9d9;
@@ -87,6 +93,31 @@ h3 {
   margin: 20px;
   color: #f2f2f2;
   font-size: 1.2em;
+  font-family: 'Alegreya', sans-serif;
+}
+
+.bio-container 
+  a:visited {
+  color: aliceblue;
+}
+
+.bio-container a:link {
+  text-emphasis: none;
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+}
+
+.bio-container a:hover {
+  color: #3e4a59;
+  background: #e9f936;
+  padding: 10px;
+}
+
+footer {
+  display: grid;
+  color: var(--teal-dark);
+  padding: 25px;
 }
 
 footer a:link {
@@ -101,16 +132,29 @@ footer a:hover {
   padding: 10px;
 }
 
-.bio-container a:link {
-  text-emphasis: none;
-  text-decoration: none;
-  color: white;
-  text-decoration: underline;
+.nav-bar .container {
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
-.bio-container a:hover {
-  color: #3e4a59;
-  background: #e9f936;
-  padding: 10px;
+
+.site-name {
+padding-left: 50px;
+}
+
+.nav-list {
+list-style: none;
+padding-right: 50px;
+margin: 0;
+display: flex;
+}
+
+.nav-list a {
+display: inline-block;
+padding: 0.5rem 1rem;
+text-decoration: none;
+color: var(--gray-dove);
+padding: 1rem;
 }
 
