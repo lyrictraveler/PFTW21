@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -7,15 +8,19 @@
     <link rel="stylesheet" href="lib/style.css" />
     <title>elderfriendlydesign</title>
   </head>
+
   <body>
-    <h1>Elder Friendly Design</h1>
-    <div id="card" class="beforeafter">
+    <h1>Web Design Portfolio</h1>
+    <div id="card">
+      <!--then use v-for to display a component for both of the objects in the portfolio array-->
       <div v-for="item in items">
-        <beforeafter-component
+        <portfolio-component
           v-bind:title="item.title"
+          v-bind:link="item.link"
           v-bind:image="item.image" 
           v-bind:alt-text="item.imageAlt"
-        ></beforeafter-component>
+          v-bind:skills="item.skills"
+        ></portfolio-component>
       </div>
     </div>
     <footer class="nav-bar">
@@ -23,14 +28,14 @@
       <h2 class="site-name">(c) <a href="mailto:wellinghall@gmail.com">Welling Hall</a> | 2021</h2>
       <nav>
         <ul class="nav-list">
-          <li class="active"><a href="#!">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="#!">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
       </div>
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="lib/beforeafter.js"></script>
+    <script src="lib/script.js"></script>
   </body>
 </html>
