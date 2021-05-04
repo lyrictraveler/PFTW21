@@ -61,7 +61,7 @@ var vm = new Vue({
         link: 'https://github.com/lyrictraveler/fcnl_case_study',
         image: 'img/FCNL clone.png',
         imageAlt: 'clone of FCNL website',
-        skills: 'HTML5, CSS, BMI, Grid',
+        skills: 'HTML5, CSS, BEM, Grid'
       },
       {
         title: 'Holiday Party Game',
@@ -70,21 +70,22 @@ var vm = new Vue({
         imageAlt: 'Christmas tree with ornaments',
         skills: 'project management, HTML, CSS, Grid',
       },
-      {
-        image: 'img/calculator.png',
-        altText: 'image of simple calculator',
-        link: 'https://plnkr.co/plunk/coD7LJUt9e6CVXci',
-        title: 'A Handy Calculator',
-        skills: 'JavaScript, Vue',
-        description: 'Project for Web Development',
-        id: 2009,
-      },
+
       {
         image: 'img/restfulAPI.png',
         altText: 'image of framed titles',
         link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk10/art',
         title: 'Art Departments at the Met',
         skills: 'JavaScript, Restful APIs, Flex',
+        description: 'Project for Web Development',
+        id: 2009,
+      },
+      {
+        image: 'img/calculator.png',
+        altText: 'image of simple calculator',
+        link: 'https://plnkr.co/plunk/coD7LJUt9e6CVXci',
+        title: 'A Handy Calculator',
+        skills: 'JavaScript, Vue',
         description: 'Project for Web Development',
         id: 2009,
       },
