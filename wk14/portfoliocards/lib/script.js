@@ -90,7 +90,7 @@ var vm = new Vue({
         link: '#!',
         image: 'img/JPEG/elderfriendly.png',
         altText: 'elder friendly design',
-        skills: 'JavaScript, Vue componenets, CSS',
+        skills: 'JavaScript, Vue components, CSS',
         description: 'Project for Web Development',
         id: 2009
       }
