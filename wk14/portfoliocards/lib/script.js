@@ -17,7 +17,7 @@ var vm = new Vue({
       {
         title: 'Church Website Design',
         link: 'https://www.westrichmondfriends.org/',
-        image: 'img/wrfwebsite.jpeg',
+        image: 'img/JPEG/wrfwebsite.jpg',
         imageAlt: 'West Richmond Friends Meeting website',
         skills: 'project management, testing and debugging'
       },
@@ -25,62 +25,62 @@ var vm = new Vue({
         title: '10.000 Jaroj: Epizodo 114 de 99% Nevidebla',
         link:
           'https://docs.google.com/presentation/d/1w5BmH99gTMSc-HOqhEv1WsXYV2P9yjisVL5ACEM3zFM/present?usp=sharing',
-        image: 'img/99invisible.png',
+        image: 'img/JPEG/99invisible.jpg',
         imageAlt: 'eerie photo with bilingual text in English and Esperanto',
-        skills: 'project management, research, GoogleSuite'
+        skills: 'design theory, research, GoogleSuite'
       },
       {
         title: 'My Design Practice',
         link: 'https://www.youtube.com/watch?v=QHSu7Vqz34A',
-        image: 'img/noisyscreen.png',
+        image: 'img/JPEG/noisyscreen.jpg',
         imageAlt: 'broken glass with disruptive words',
-        skills: 'design thinking, research, UX, Adobe Premier Rush'
+        skills: 'research, UX, Adobe Premier Rush'
       },
       {
         title: 'CUCCS Blog',
         link: 'https://www.cuccs.org',
-        image: 'img/CUCCSblog.png',
+        image: 'img/JPEG/CUCCSblog.jpg',
         imageAlt: 'blog page',
         skills: 'project management, blogging, Constant Contact'
       },
       {
         title: 'FCNL Case Study',
         link: 'https://github.com/lyrictraveler/fcnl_case_study',
-        image: 'img/FCNL clone.png',
+        image: 'img/JPEG/FCNL clone.jpg',
         imageAlt: 'clone of FCNL website',
         skills: 'HTML5, CSS, BEM, Grid'
       },
       {
         title: 'Holiday Party Game',
         link: 'https://lyrictraveler.github.io/wrfnew_party2020/',
-        image: 'img/holidayparty.png',
+        image: 'img/JPEG/holidayparty.jpg',
         imageAlt: 'Christmas tree with ornaments',
-        skills: 'project management, HTML, CSS, Grid'
+        skills: 'project management, HTML5, CSS, Grid'
       },
 
       {
-        image: 'img/restfulAPI.png',
+        title: 'Art Departments at the Met',
+        image: 'img/JPEG/restfulAPI.jpg',
         altText: 'image of framed titles',
         link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk10/art',
-        title: 'Art Departments at the Met',
         skills: 'JavaScript, Restful APIs, Flex',
         description: 'Project for Web Development',
         id: 2009
       },
       {
-        image: 'img/calculator.png',
+        title: 'A Handy Calculator',
+        image: 'img/JPEG/calculator.jpg',
         altText: 'image of simple calculator',
         link: 'https://plnkr.co/plunk/coD7LJUt9e6CVXci',
-        title: 'A Handy Calculator',
         skills: 'JavaScript, Vue',
         description: 'Project for Web Development',
         id: 2009
       },
       {
-        image: 'img/keyboard.png',
+        title: 'Digital Piano',
+        image: 'img/JPEG/keyboard.jpg',
         altText: 'colorful xylophone',
         link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk12/piano',
-        title: 'Digital Piano',
         skills: 'Sounds with JavaScript',
         description: 'Project for Web Development',
         id: 2009

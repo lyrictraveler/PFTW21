@@ -16,22 +16,22 @@ var vm = new Vue({
     items: [
       {
         title: 'Before',
-        image: 'img/nor_misery.jpeg',
+        image: 'img/JPEG/nor_misery.jpg',
         imageAlt: 'woman with head in her hands'
       },
       {
         title: 'After',
-        image: 'img/nor_hppiness.jpeg',
+        image: 'img/JPEG/nor_hppiness.jpg',
         imageAlt: 'curious woman'
       },
       {
         title: 'Before',
-        image: 'img/Bob_shakesfist.jpg',
+        image: 'img/JPEG/Bob_shakesfist.jpg',
         imageAlt: 'shocked man'
       },
       {
         title: 'After',
-        image: 'img/Bob_happy.jpg',
+        image: 'img/JPEG/Bob_happy.jpg',
         imageAlt: 'man content'
       }
     ]
