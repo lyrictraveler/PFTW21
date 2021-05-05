@@ -69,19 +69,28 @@ var vm = new Vue({
       },
       {
         title: 'A Handy Calculator',
+        link: 'https://plnkr.co/plunk/coD7LJUt9e6CVXci',
         image: 'img/JPEG/calculator.jpg',
         altText: 'image of simple calculator',
-        link: 'https://plnkr.co/plunk/coD7LJUt9e6CVXci',
         skills: 'JavaScript, Vue',
         description: 'Project for Web Development',
         id: 2009
       },
       {
         title: 'Digital Piano',
+        link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk12/piano',
         image: 'img/JPEG/keyboard.jpg',
         altText: 'colorful xylophone',
-        link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk12/piano',
         skills: 'Sounds with JavaScript',
+        description: 'Project for Web Development',
+        id: 2009
+      },
+      {
+        title: 'This Website',
+        link: '#!',
+        image: 'img/JPEG/elderfriendly.png',
+        altText: 'elder friendly design',
+        skills: 'JavaScript, Vue componenets, CSS',
         description: 'Project for Web Development',
         id: 2009
       }

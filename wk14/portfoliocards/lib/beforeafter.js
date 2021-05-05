@@ -26,12 +26,12 @@ var vm = new Vue({
       },
       {
         title: 'Before',
-        image: 'img/JPEG/Bob_shakesfist.jpg',
+        image: 'img/JPEG/Bob_shakesfist_1.jpg',
         imageAlt: 'shocked man'
       },
       {
         title: 'After',
-        image: 'img/JPEG/Bob_happy.jpg',
+        image: 'img/JPEG/Bob_happy_1.jpg',
         imageAlt: 'man content'
       }
     ]
