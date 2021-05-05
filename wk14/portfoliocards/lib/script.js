@@ -87,7 +87,7 @@ var vm = new Vue({
       },
       {
         title: 'This Website',
-        link: '#!',
+        link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk14/portfoliocards',
         image: 'img/JPEG/elderfriendly.png',
         altText: 'elder friendly design',
         skills: 'JavaScript, Vue components, CSS',
