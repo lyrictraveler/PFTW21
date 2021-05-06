@@ -78,7 +78,7 @@ var vm = new Vue({
       },
       {
         title: 'Digital Piano',
-        link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk12/piano/readme.md',
+        link: 'https://lyrictraveler.github.io/PFTW21/wk12/piano/index.html',
         image: 'img/JPEG/keyboard.jpg',
         altText: 'colorful xylophone',
         skills: 'Sounds with JavaScript, p5.js',
