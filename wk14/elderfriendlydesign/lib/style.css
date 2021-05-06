@@ -6,8 +6,8 @@
 .Hofmann-—-Pastry-Classroom-3-hex { color: #F2F2F2; }
 .Hofmann-—-Pastry-Classroom-4-hex { color: #D9D9D9; }
 .Hofmann-—-Pastry-Classroom-5-hex { color: #0D0D0D; }
+.neon---yellow { color: #E9F936; }
 
-*/
 * 
 [v-cloak] {
   display: none;
@@ -27,25 +27,20 @@ header {
   font-size: .8em;
   float: right;
   padding: 20px;
-
 }
 
 header a {
-  text-emphasis: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #7D858C;
+  color: var(--gray-dove);
+  padding: 1rem;
+  font-size: 1.5em; 
 }
 
-header a:active {
-  color: transparent;
-  background: white;
-  padding: 10px;
-}
-
-header a:hover {
-  color: #3e4a59;
-  background: #e9f936;
-  padding: 12px;
+header a:not(.here):hover {
+  border: 4px double #d2d2d2;
+  border-radius: 10%;
 }
 
 .nav-bar .container {
@@ -60,19 +55,6 @@ header a:hover {
   list-style: none;
   margin: 0;
   display: flex;
-}
-
-.nav-list a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: var(--gray-dove);
-  padding: 1rem;
-  font-size: 1.5em;
-}
-
-.nav-list .active a {
-  border: 4px solid #7D858C;
 }
 
 h1 {
@@ -102,7 +84,7 @@ h3 {
   width: 260px;
   padding: 30px;
   margin: 20px;
-  color: black;
+  color: #0d0d0d;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.2em;
 }
@@ -118,14 +100,6 @@ h3 {
   background: #f2f2f2;
   border: 6px double #3e4a59;
   box-shadow: 0 0 8px 8px #d9d9d9 inset;
-}
-
-.portfolio-container 
-a:visited {
-border: 6px solid #E9F936;
-padding: 10px;
-color: #E9F936;
-background: #e9f936;
 }
 
 .project-title {
@@ -158,7 +132,7 @@ background: #e9f936;
   width: 300px;
   padding: 30px;
   margin: 20px;
-  color: black;
+  color: #0d0d0d;
   font-family: 'Merriweather Sans', 
   font-size: 1.2em;
 }
@@ -172,28 +146,6 @@ background: #e9f936;
   margin: 10px auto;
 }
 
-/* .skills {
-  padding: 15px;
-  line-height: 1.5em;
-}
-
-.portfolio-container:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    background: #f2f2f2;
-    border: 6px double #3e4a59;
-    box-shadow: 0 0 8px 8px #d9d9d9 inset;
-}
-
-.portfolio-container 
-  a:visited {
-  border: 6px solid #E9F936;
-  padding: 10px;
-  color: #E9F936;
-  background: #e9f936;
-}
- */
 .bio-container {
   background: #d9d9d9;
   border: 6px double #7D858C;
@@ -205,21 +157,21 @@ background: #e9f936;
 }
 
 .bio-container a:link {
-  text-emphasis: none;
-  text-decoration: none;
   color: black;
-  text-decoration: underline;
 }
 
 .bio-container a:hover {
-  color: #3e4a59;
-  background: #e9f936;
-  padding: 10px;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background: #f2f2f2;
+  border: 6px double #3e4a59;
+  box-shadow: 0 0 8px 8px #d9d9d9 inset;
 }
 
 .bio-container 
   a:visited {
-  color: #3e4a59;
+  color: #0d0d0d;
 }
 
 footer {
@@ -237,15 +189,7 @@ footer a {
   color: #7D858C;
 }
 
-footer a:active {
-  color: transparent;
-  background: white;
-  font-size: 1.2em;
-  padding: 10px;
-}
-
 footer a:hover {
-  color: #3e4a59;
-  background: #e9f936;
-  padding: 12px;
+  border: 4px double #d2d2d2;
+  border-radius: 10%;
 }
