@@ -157,7 +157,7 @@ h3 {
 }
 
 .bio-container a:link {
-  color: #3e4a59;
+  color: black;
   text-decoration-style: double;
   font-style: oblique;
 }
@@ -165,7 +165,7 @@ h3 {
  
 .bio-container 
   a:visited {
-  color: black; 
+  color: #3e4a59; 
 }
 
 footer {
