@@ -52,7 +52,7 @@ var vm = new Vue({
       },
       {
         title: 'Holiday Party Game',
-        link: 'https://lyrictraveler.github.io/wrfnew_party2020/',
+        link: 'https://github.com/lyrictraveler/xmas_party2020/blob/main/README.md',
         image: 'img/JPEG/holidayparty.jpg',
         imageAlt: 'Christmas tree with ornaments',
         skills: 'project management, HTML5, CSS, Grid'
