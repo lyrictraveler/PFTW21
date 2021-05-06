@@ -22,23 +22,102 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+/* h1 {
   padding: 50px;
   font-size: 3em;
   margin-bottom: 0px;
   font-family: Merriweather, serif;
+} */
+
+/* h1 {
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  text-align: center;
+  position: relative;
 }
 
-h1, #card {
+/* h1, #card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
   justify-content: center;
+} */
+
+/* h1, #card {
+  margin: 4rem 0;
+  padding: 0 2rem;
+  display: flex;
+}  */
+
+ /* The sidebar menu */
+ .sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main, #card {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
 
 h3 {
   padding: 50px;
+}
+/* Style the side navigation */
+/* .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: peru;  
+  overflow-x: hidden;
+} */
+
+.sidenav {background-color: white;
+position: fixed;
+top: 0;
+left: 0;
+height: 100vh;
+width: 30vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 0 1rem 1rem 0;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .portfolio-container {
@@ -51,10 +130,27 @@ h3 {
   color: black;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.2em;
+
 }
 
 .portfolio-container h2 {
   font-size: 1.5em;
+}
+
+.portfolio-container:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background: #f2f2f2;
+  border: 6px double #3e4a59;
+  box-shadow: 0 0 8px 8px #d9d9d9 inset;
+}
+
+.portfolio-container a:visited {
+border: 6px solid #E9F936;
+padding: 10px;
+color: #E9F936;
+background: #e9f936;
 }
 
 .project-title {
@@ -68,6 +164,11 @@ h3 {
   display: block;
   width: 220px;
   margin: 10px auto;
+}
+
+.skills {
+  padding: 15px;
+  line-height: 1.5em;
 }
 
 .beforeafter-container {
@@ -91,28 +192,6 @@ h3 {
   margin: 10px auto;
 }
 
-.skills {
-  padding: 15px;
-  line-height: 1.5em;
-}
-
-.portfolio-container:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    background: #f2f2f2;
-    border: 6px double #3e4a59;
-    box-shadow: 0 0 8px 8px #d9d9d9 inset;
-}
-
-.portfolio-container 
-  a:visited {
-  border: 6px solid #E9F936;
-  padding: 10px;
-  color: #E9F936;
-  background: #e9f936;
-}
-
 .bio-container {
   background: #d9d9d9;
   border: 6px double #7D858C;
@@ -122,7 +201,6 @@ h3 {
   color: #3E4A59;
   font-size: 1.2em;
 }
-
 
 .bio-container a:link {
   text-emphasis: none;
@@ -140,6 +218,7 @@ h3 {
 .bio-container 
   a:visited {
   color: #3e4a59;
+
 }
 
 footer {
@@ -162,7 +241,7 @@ footer a:active {
 }
 
 footer a:hover {
-  color: #3e4a59;
+  color: black;
   background: #e9f936;
   padding: 12px;
 }
@@ -189,6 +268,6 @@ padding: 0.5rem 1rem;
 text-decoration: none;
 color: var(--gray-dove);
 padding: 1rem;
-font-size: 1.5em;
+font-size: 1.2em;
 }
 

@@ -62,7 +62,7 @@ var vm = new Vue({
         title: 'Art Departments at the Met',
         image: 'img/JPEG/restfulAPI.jpg',
         altText: 'image of framed titles',
-        link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk10/art',
+        link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk10/art/readme.md',
         skills: 'JavaScript, Restful APIs, Flex',
         description: 'Project for Web Development',
         id: 2009
@@ -78,16 +78,16 @@ var vm = new Vue({
       },
       {
         title: 'Digital Piano',
-        link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk12/piano',
+        link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk12/piano/readme.md',
         image: 'img/JPEG/keyboard.jpg',
         altText: 'colorful xylophone',
-        skills: 'Sounds with JavaScript',
+        skills: 'Sounds with JavaScript, p5.js',
         description: 'Project for Web Development',
         id: 2009
       },
       {
         title: 'This Website',
-        link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk14/portfoliocards',
+        link: '',
         image: 'img/JPEG/elderfriendly.png',
         altText: 'elder friendly design',
         skills: 'JavaScript, Vue components, CSS',
