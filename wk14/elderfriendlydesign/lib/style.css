@@ -93,13 +93,13 @@ h3 {
   font-size: 1.5em;
 }
 
-.portfolio-container:hover {
+.portfolio-container a:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   background: #f2f2f2;
-  border: 6px double #3e4a59;
-  box-shadow: 0 0 8px 8px #d9d9d9 inset;
+  /* border: 6px double #3e4a59; 
+  box-shadow: 0 0 8px 8px #d9d9d9 inset;*/
 }
 
 .project-title {
@@ -152,26 +152,31 @@ h3 {
   border-radius: 25px;
   padding: 30px;
   margin: 20px;
-  color: #3E4A59;
+  color: #0d0d0d;
   font-size: 1.2em;
 }
 
 .bio-container a:link {
   color: black;
+  text-decoration: none;
+  font-style: oblique;
 }
 
 .bio-container a:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+  padding: .5rem;
   background: #f2f2f2;
   border: 6px double #3e4a59;
-  box-shadow: 0 0 8px 8px #d9d9d9 inset;
+  border-radius: 10%;
+  color: black;
+  /*box-shadow: 0 0 8px 8px #d9d9d9 inset; */
 }
 
 .bio-container 
   a:visited {
-  color: #0d0d0d;
+  color:#3E4A59; 
 }
 
 footer {
@@ -192,4 +197,5 @@ footer a {
 footer a:hover {
   border: 4px double #d2d2d2;
   border-radius: 10%;
+  padding: 1rem;
 }
