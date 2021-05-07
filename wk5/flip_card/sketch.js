@@ -180,8 +180,8 @@ function draw () {
   gameState.waiting = false;
   fill(255);
   textSize(24);
-  text('attempts ' + gameState.attempts, 100, 600);
-  text('matches ' + gameState.numMatched, 100, 650);
+  text('attempts: ' + gameState.attempts, 100, 600);
+  text('matches: ' + gameState.numMatched, 100, 650);
 } 
 
 function shuffleArray (array) {

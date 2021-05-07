@@ -51,11 +51,11 @@ var vm = new Vue({
         skills: 'HTML5, CSS, BEM, Grid'
       },
       {
-        title: 'Holiday Party Game',
-        link: 'https://github.com/lyrictraveler/xmas_party2020/blob/main/README.md',
-        image: 'img/JPEG/holidayparty.jpg',
-        imageAlt: 'Christmas tree with ornaments',
-        skills: 'project management, HTML5, CSS, Grid'
+        title: 'Floral Memory Game',
+        link: 'https://lyrictraveler.github.io/PFTW21/wk5/flip_card/index.html',
+        image: 'img/JPEG/flowergame.png',
+        imageAlt: 'memory game with flowers',
+        skills: 'HTML5, p5.js, CSS'
       },
 
       {
