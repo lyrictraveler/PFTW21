@@ -49,7 +49,7 @@ function setup() {
   button4.position(600, 590);
   button4.size(200, 100);
   button4.style('font-size', '18px');
-  button4.style('background-color', 'green');
+  button4.style('background-color', 'yellowgreen');
   button4.mousePressed(playFa);
   button5 = createButton('Sol');
   button5.position(600, 720);

@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: blue;
   color: oldlace;
 }
 canvas {
@@ -14,7 +15,6 @@ html {
   font-family: "Montserrat", sans-serif;
   font-family: "Playfair Display", serif;
   background: blue;
-
 }
 
 header {
