@@ -38,7 +38,7 @@ var vm = new Vue({
       },
       {
         title: 'CUCCS Blog',
-        link: 'https://www.cuccs.org',
+        link: 'https://www.cuccs.org/blog',
         image: 'img/JPEG/CUCCSblog.jpg',
         imageAlt: 'blog page',
         skills: 'project management, blogging, Constant Contact'
