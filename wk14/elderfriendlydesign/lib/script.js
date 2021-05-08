@@ -1,3 +1,5 @@
+/* This page was created by setting up creating a portfolio template to use as a Vue component. */
+
 Vue.component('portfolio-component', {
   template: `<div class="portfolio-container  v-cloak">
                 <h2 class="project-title">{{title}}</h2>
@@ -9,6 +11,8 @@ Vue.component('portfolio-component', {
             </div>`,
   props: ['title', 'link', 'image', 'imageAlt', 'skills']
 });
+
+/* With the Vue component template created, it is a trivial matter to enter the data into each card for an ever expanding portfolio. */
 
 var vm = new Vue({
   el: '#card',
@@ -87,7 +91,7 @@ var vm = new Vue({
       },
       {
         title: 'This Website',
-        link: '',
+        link: 'https://github.com/lyrictraveler/PFTW21/tree/main/wk14/elderfriendlydesign',
         image: 'img/JPEG/elderfriendly.png',
         altText: 'elder friendly design',
         skills: 'JavaScript, Vue components, CSS',

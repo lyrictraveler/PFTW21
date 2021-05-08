@@ -31,16 +31,15 @@ header {
 
 header a {
   display: inline-block;
-  padding: 0.5rem 1rem;
   text-decoration: none;
-  color: var(--gray-dove);
+  color:  #3E4A59;
   padding: 1rem;
   font-size: 1.5em; 
 }
 
 header a:not(.here):hover {
-  border: 4px double #d2d2d2;
-  border-radius: 10%;
+  background: #E9F936;
+  color: #0d0d0d;
 }
 
 .nav-bar .container {
@@ -184,7 +183,6 @@ footer a {
 }
 
 footer a:hover {
-  border: 4px double #d2d2d2;
-  border-radius: 10%;
-  padding: 1rem;
+  background: #E9F936;
+  color: #0d0d0d;
 }

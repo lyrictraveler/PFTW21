@@ -1,3 +1,5 @@
+/* This page was created after I made the portfolio template. With the heavy lifting already done, it was a simple matter to reuse the basic template for some before/after photos with some style. */
+
 Vue.component('beforeafter-component', {
   template: `<div class="beforeafter-container v-cloak">
                 <h2 class="project-title">{{title}}</h2>
