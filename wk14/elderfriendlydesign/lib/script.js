@@ -17,7 +17,7 @@ var vm = new Vue({
       {
         title: 'Church Website Design',
         link: 'https://www.westrichmondfriends.org/',
-        image: 'img/JPEG/wrfwebsite.jpg',
+        image: 'img/JPEG/newwrf.png',
         imageAlt: 'West Richmond Friends Meeting website',
         skills: 'project management, testing and debugging'
       },
